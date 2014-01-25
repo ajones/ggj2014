@@ -19,25 +19,6 @@ MonoBehaviour:
     loadable: 0
   fontIndex: []
   spriteCollectionIndex:
-  - name: DuckCharacter
-    spriteCollectionGUID: 6bbdafc5f7937492381fac3223b85a66
-    spriteCollectionDataGUID: a698cd6100c9548b1a1cbb15a8068e20
-    spriteNames:
-    - duck
-    - duckFlap
-    - sword
-    spriteTextureGUIDs:
-    - cb72510bb97504d3fbefd5f65d00c219
-    - d5d0ecf5a1b1e4b70a4a3384947b0287
-    - f89195319b03847358c796ec9ff94bc5
-    spriteTextureTimeStamps:
-    - 1390596898
-    - 1390606180
-    - 1390607317
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 3
   - name: Popups
     spriteCollectionGUID: 68530048a56ea4d6e976298298f86267
     spriteCollectionDataGUID: de669a5f44ea7456a976501ab55c9268
@@ -47,6 +28,52 @@ MonoBehaviour:
     - 3584237fbb238498bb6d646a19ba9c1c
     spriteTextureTimeStamps:
     - 1390609059
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: DuckCharacter
+    spriteCollectionGUID: 6bbdafc5f7937492381fac3223b85a66
+    spriteCollectionDataGUID: d355a1a4b242348788d271b15d95e890
+    spriteNames:
+    - duck
+    - duckFlap
+    - sword
+    - duckWaddle0
+    - duckStand
+    - duckSit0
+    - duckWaddle1
+    - duckSit1
+    - duckGrab3
+    - duckGrab2
+    - duckGrab1
+    - duckGrab0
+    spriteTextureGUIDs:
+    - cb72510bb97504d3fbefd5f65d00c219
+    - d5d0ecf5a1b1e4b70a4a3384947b0287
+    - f89195319b03847358c796ec9ff94bc5
+    - 1b465f53e16684000ac9ba30a39d84ce
+    - 41da033b6a4d34d30b8b3b0423d8b2f3
+    - 46be2e5b214444ec7814ab862cc0b3bc
+    - dc614b7674014453f8403616896c2781
+    - ecb7b01c51d524ce2a704e5dd46c3827
+    - 501c73589c8a546ab8d76102ac281bfc
+    - 652f6952b63be45fcb65b00ced8feb7e
+    - d0ad906c9a6414cf792150f596714a3a
+    - ea2dd7fa313f144fd94c4d0c39b33397
+    spriteTextureTimeStamps:
+    - 1390595199
+    - 1390647363
+    - 1390608490
+    - 1390651307
+    - 1390647327
+    - 1390645856
+    - 1390651316
+    - 1390645871
+    - 1390650815
+    - 1390650805
+    - 1390650795
+    - 1390650782
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

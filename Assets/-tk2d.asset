@@ -78,3 +78,19 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: Backgrounds
+    spriteCollectionGUID: b5d84939808a548d58b27e2a0ed55e6a
+    spriteCollectionDataGUID: d7364f4f96c334cda9079cf2172d6e13
+    spriteNames:
+    - 
+    - house_concept_flat2
+    spriteTextureGUIDs:
+    - 
+    - f0b623d59e7be4081a96e07fe7538588
+    spriteTextureTimeStamps:
+    - 0
+    - 1390659584
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3

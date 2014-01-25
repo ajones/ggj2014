@@ -7,14 +7,17 @@ public class MovementController : MonoBehaviour {
 	float jumpSpeed = 100000f;
 
 	GameObject capturedItem = null;
+	GameObject popUp = null;
 
 
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown ("up") || Input.GetKey ("w")){
+			this.destroyPopupIfNecessary();
 			this.rigidbody2D.AddForce(new Vector3(0,jumpSpeed,0));
 		}
 		if (Input.GetKey ("right") || Input.GetKey ("d")){
+			this.destroyPopupIfNecessary();
 			this.rigidbody2D.AddForce(new Vector3(movementSpeed,0,0));
 			this.transform.localScale = new Vector3(
 				Mathf.Abs (this.transform.localScale.x),
@@ -22,6 +25,7 @@ public class MovementController : MonoBehaviour {
 				this.transform.localScale.z);
 		}
 		if (Input.GetKey ("left") || Input.GetKey ("a")){
+			this.destroyPopupIfNecessary();
 			this.rigidbody2D.AddForce(new Vector3(movementSpeed * -1,0,0));
 			this.transform.localScale = new Vector3(
 				Mathf.Abs (this.transform.localScale.x) * -1,
@@ -34,7 +38,15 @@ public class MovementController : MonoBehaviour {
 				this.capturedItem.collider2D.isTrigger = true;
 				this.capturedItem = null;
 			}
-			PopupManager.getInstance().showPopupFromGmaeObject("testPopup",this.gameObject, new Vector3(0,0.75f,0));
+
+			this.destroyPopupIfNecessary();
+			this.popUp = PopupManager.getInstance().showPopupFromGameObject("testPopup",this.gameObject, new Vector3(0,0.75f,0));
+		}
+	}
+
+	void destroyPopupIfNecessary() {
+		if (this.popUp != null){
+			GameObject.Destroy(this.popUp);
 		}
 	}
 

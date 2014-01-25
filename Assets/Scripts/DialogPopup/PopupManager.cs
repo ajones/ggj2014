@@ -12,7 +12,7 @@ public class PopupManager : Manager {
 		return getInstance(ref instance, "PopupManager") as PopupManager;
 	}
 
-	public GameObject showPopupFromGmaeObject(string popupPrefabName, GameObject anchorObject, Vector3 offset){ 
+	public GameObject showPopupFromGameObject(string popupPrefabName, GameObject anchorObject, Vector3 offset){ 
 
 		GameObject popupPrefab = Resources.Load("Prefabs/Popups/"+popupPrefabName) as GameObject;
 

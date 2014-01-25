@@ -32,6 +32,7 @@ public class ZoomController : MonoBehaviour, IEventListener {
 			break;
 		case "Segway":
 			StartCoroutine("ZoomOut");
+			print ("zoom out");
 			break;
 		default:
 			Debug.Log ("Default!");
@@ -52,8 +53,12 @@ public class ZoomController : MonoBehaviour, IEventListener {
 	}
 
 	IEnumerator ZoomOut() {
+		float originalSize = cam.orthographicSize;
+		float diffInSize = outSize - originalSize ;
+		float currentDiff = 0;
 		while (cam.orthographicSize < outSize) {
-			cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, outSize, moveSpeed * Time.deltaTime);
+			currentDiff = Mathf.Lerp (currentDiff, diffInSize, moveSpeed * Time.deltaTime);
+			cam.orthographicSize = originalSize + currentDiff;
 			yield return new WaitForEndOfFrame();
 		}
 	}

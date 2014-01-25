@@ -16,13 +16,18 @@ public class InteractionTarget : MonoBehaviour,IEventListener {
 	}
 
 
-	public void beginInteraction () {
+	public virtual void beginInteraction () {
 
 		this.popup = PopupManager.getInstance().showPopupFromGameObject("testPopup",this.gameObject, new Vector3(0,0.75f,0));
 	}
 
-	public void stopInteraction () {
+	public virtual void stopInteraction () {
 
+	}
+
+
+	public virtual void heroInteracted() {
+		this.interactionSatisfied();
 	}
 
 
@@ -33,7 +38,7 @@ public class InteractionTarget : MonoBehaviour,IEventListener {
 			StartCoroutine(hideThankYou());
 		}
 	}
-
+	
 	IEnumerator hideThankYou() {
 		yield return new WaitForSeconds(1f);
 		GameObject.Destroy(this.popup);
@@ -44,7 +49,7 @@ public class InteractionTarget : MonoBehaviour,IEventListener {
 	bool IEventListener.HandleEvent(IEvent evt) {
 		switch (evt.GetName()) {
 		case "HeroInteractEvent":
-			this.interactionSatisfied();
+			this.heroInteracted();
 			break;
 		}        
 		return false;

@@ -45,6 +45,7 @@ public class MovementController : MonoBehaviour {
 
 			this.quack();
 			EventManager.TriggerEvent(new HeroInteractEvent());
+			EventManager.TriggerEvent(new CameraShakeEvent());
 		}
 	}
 

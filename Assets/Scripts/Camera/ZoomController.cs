@@ -13,6 +13,7 @@ public class ZoomController : MonoBehaviour, IEventListener {
 	void Awake() {
 		EventManager.AddListener(this, "LevelStart");
 		EventManager.AddListener(this, "Segway");
+		EventManager.AddListener(this, "CameraShakeEvent");
 	}
 
 	// Use this for initialization
@@ -33,6 +34,9 @@ public class ZoomController : MonoBehaviour, IEventListener {
 		case "Segway":
 			StartCoroutine("ZoomOut");
 			print ("zoom out");
+			break;
+		case "CameraShakeEvent":
+			StartCoroutine("ShakeCamera");
 			break;
 		default:
 			Debug.Log ("Default!");
@@ -62,4 +66,32 @@ public class ZoomController : MonoBehaviour, IEventListener {
 			yield return new WaitForEndOfFrame();
 		}
 	}
+
+	IEnumerator ShakeCamera() {
+		float shakeTime = 3f;
+		float shakeSize = 3f;
+		float shakeStep = 0.1f;
+		float elapsedTime = 0f;
+		Vector3 startingPos = this.transform.localPosition;
+
+		while(elapsedTime < shakeTime){
+			this.transform.localPosition = new Vector3(
+				startingPos.x + ((Random.value * shakeSize) - shakeSize/2f),
+				startingPos.y + ((Random.value * shakeSize) - shakeSize/2f),
+				startingPos.z 
+			);
+			
+			yield return new WaitForSeconds(shakeStep);
+
+			elapsedTime += shakeStep;
+		}
+
+		this.transform.localPosition = startingPos;
+	}
 }
+
+
+
+
+
+

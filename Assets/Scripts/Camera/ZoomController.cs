@@ -18,7 +18,6 @@ public class ZoomController : MonoBehaviour, IEventListener {
 	// Use this for initialization
 	void Start() {
 		cam = Camera.main;
-		EventManager.TriggerEventAfter (new LevelStart (), 2);
 	}
 	
 	// Update is called once per frame

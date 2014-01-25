@@ -6,7 +6,6 @@ public class StickyObjectController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision ) {
 		if(collision.gameObject.tag=="hero"){ 
-			print("hit");
 			this.transform.parent = collision.gameObject.transform;
 			this.transform.localPosition = new Vector3(0.31f,0.41f,-1);
 			collision.gameObject.SendMessage("itemCaptured", this.gameObject);

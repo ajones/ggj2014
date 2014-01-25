@@ -34,6 +34,7 @@ public class MovementController : MonoBehaviour {
 				this.capturedItem.collider2D.isTrigger = true;
 				this.capturedItem = null;
 			}
+			PopupManager.getInstance().showPopupFromGmaeObject("testPopup",this.gameObject, new Vector3(0,0.75f,0));
 		}
 	}
 

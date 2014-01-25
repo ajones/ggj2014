@@ -2,8 +2,6 @@
 using System.Collections;
 
 public class StickyObjectController : MonoBehaviour {
-	
-
 	void OnCollisionEnter2D(Collision2D collision ) {
 		if(collision.gameObject.tag=="hero"){ 
 			this.transform.parent = collision.gameObject.transform;
@@ -16,9 +14,6 @@ public class StickyObjectController : MonoBehaviour {
 		if(collider.gameObject.tag=="hero"){ 
 			this.collider2D.isTrigger = false;
 			this.gameObject.AddComponent<Rigidbody2D>();
-			//rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ;
-			//rb.interpolation = RigidbodyInterpolation.Interpolate;
-			//rb.collisionDetectionMode = CollisionDetectionMode.Discrete;
 		}
 	}
 

@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: -tk2d
   m_EditorClassIdentifier: 
   version: 4
-  spriteAnimationIndex: []
+  spriteAnimationIndex:
+  - assetGUID: d77b271716e6941d7875ae1514a4f249
+    dataGUID: 
+    managed: 0
+    loadable: 0
   fontIndex: []
   spriteCollectionIndex:
   - name: DuckCharacter
@@ -20,10 +24,29 @@ MonoBehaviour:
     spriteCollectionDataGUID: a698cd6100c9548b1a1cbb15a8068e20
     spriteNames:
     - duck
+    - duckFlap
+    - sword
     spriteTextureGUIDs:
     - cb72510bb97504d3fbefd5f65d00c219
+    - d5d0ecf5a1b1e4b70a4a3384947b0287
+    - f89195319b03847358c796ec9ff94bc5
     spriteTextureTimeStamps:
-    - 1390595199
+    - 1390596898
+    - 1390606180
+    - 1390607317
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: Popups
+    spriteCollectionGUID: 68530048a56ea4d6e976298298f86267
+    spriteCollectionDataGUID: de669a5f44ea7456a976501ab55c9268
+    spriteNames:
+    - whitePixel
+    spriteTextureGUIDs:
+    - 3584237fbb238498bb6d646a19ba9c1c
+    spriteTextureTimeStamps:
+    - 1390609059
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

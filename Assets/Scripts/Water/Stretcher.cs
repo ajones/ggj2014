@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Stretcher or scales an entity by a specified amount.
+/// </summary>
 public class Stretcher : MonoBehaviour {
-	public Vector3 stretchTime;
+
+	public Vector3 stretchTime; // the speed at which the entity is stretched on each axis
+	
 	private Transform myTransform;
 	private Vector3 newScale;
 

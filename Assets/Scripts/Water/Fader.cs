@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Fades the alpha transparency of an entity over time.
+/// </summary>
 public class Fader : MonoBehaviour {
 
 	public float fadeTime;

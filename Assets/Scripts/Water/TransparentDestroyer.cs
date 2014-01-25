@@ -1,18 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Destroys any object with a material whose alpha trans is 0 or less.
+/// </summary>
 public class TransparentDestroyer : MonoBehaviour {
 
-	private Material material;
+	private Color color;
 
 	// Use this for initialization
 	void Start () {
-		material = renderer.material;
+		color = renderer.material.color;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (material.color.a <= 0) {
+		if (color.a <= 0) {
 			Destroy(gameObject);
 		}
 	}

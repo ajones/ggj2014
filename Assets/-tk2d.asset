@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Name: -tk2d
   m_EditorClassIdentifier: 
   version: 4
-  spriteAnimationIndex: []
+  spriteAnimationIndex:
+  - assetGUID: d77b271716e6941d7875ae1514a4f249
+    dataGUID: 
+    managed: 0
+    loadable: 0
   fontIndex: []
   spriteCollectionIndex:
   - name: DuckCharacter
@@ -20,10 +24,13 @@ MonoBehaviour:
     spriteCollectionDataGUID: a698cd6100c9548b1a1cbb15a8068e20
     spriteNames:
     - duck
+    - duckFlap
     spriteTextureGUIDs:
     - cb72510bb97504d3fbefd5f65d00c219
+    - d5d0ecf5a1b1e4b70a4a3384947b0287
     spriteTextureTimeStamps:
-    - 1390595199
+    - 1390596898
+    - 1390604297
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

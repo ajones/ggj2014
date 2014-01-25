@@ -58,14 +58,55 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .0312656239, y: .0312656239}
-    - {x: .671859384, y: .0312656239}
-    - {x: .0312656239, y: .546859384}
-    - {x: .671859384, y: .546859384}
+    - {x: .0312656239, y: .0156328119}
+    - {x: .671859384, y: .0156328119}
+    - {x: .0312656239, y: .273429692}
+    - {x: .671859384, y: .273429692}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: ccd5ca3b09b074a74ac1f243fe41a3bf, type: 2}
     materialId: 0
     sourceTextureGUID: cb72510bb97504d3fbefd5f65d00c219
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: duckFlap
+    boundsData:
+    - {x: .00500000268, y: .234999985, z: 0}
+    - {x: .409999967, y: .329999983, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: .199999988, z: 0}
+    - {x: .419999987, y: .399999976, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.199999988, y: .0699999928, z: 0}
+    - {x: .209999993, y: .0699999928, z: 0}
+    - {x: -.199999988, y: .399999976, z: 0}
+    - {x: .209999993, y: .399999976, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .0312656239, y: .304695308}
+    - {x: .671859384, y: .304695308}
+    - {x: .0312656239, y: .562492192}
+    - {x: .671859384, y: .562492192}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ccd5ca3b09b074a74ac1f243fe41a3bf, type: 2}
+    materialId: 0
+    sourceTextureGUID: d5d0ecf5a1b1e4b70a4a3384947b0287
     extractRegion: 0
     regionX: 0
     regionY: 0
@@ -100,7 +141,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 50
-  buildKey: 2002946893
+  buildKey: 1678504895
   dataGuid: a698cd6100c9548b1a1cbb15a8068e20
   managedSpriteCollection: 0
   hasPlatformData: 0

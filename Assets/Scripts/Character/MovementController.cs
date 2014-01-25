@@ -42,7 +42,14 @@ public class MovementController : MonoBehaviour {
 
 			this.destroyPopupIfNecessary();
 			this.popUp = PopupManager.getInstance().showPopupFromGameObject("testPopup",this.gameObject, new Vector3(0,0.75f,0));
+
+			this.quack();
 		}
+	}
+
+	void quack() {
+		int quackIdx = (int)Mathf.Floor(Random.value * 4.0f);
+		SoundManager.getInstance().playSoundEffect("quack" + quackIdx);
 	}
 
 	void destroyPopupIfNecessary() {

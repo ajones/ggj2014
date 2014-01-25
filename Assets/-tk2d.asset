@@ -26,14 +26,29 @@ MonoBehaviour:
     - duck
     - duckFlap
     - sword
+    - duckWaddle0
+    - duckStand
+    - duckSit0
+    - duckWaddle1
+    - duckSit1
     spriteTextureGUIDs:
     - cb72510bb97504d3fbefd5f65d00c219
     - d5d0ecf5a1b1e4b70a4a3384947b0287
     - f89195319b03847358c796ec9ff94bc5
+    - 1b465f53e16684000ac9ba30a39d84ce
+    - 41da033b6a4d34d30b8b3b0423d8b2f3
+    - 46be2e5b214444ec7814ab862cc0b3bc
+    - dc614b7674014453f8403616896c2781
+    - ecb7b01c51d524ce2a704e5dd46c3827
     spriteTextureTimeStamps:
-    - 1390596898
-    - 1390606180
-    - 1390607317
+    - 1390595199
+    - 1390644950
+    - 1390608490
+    - 1390645472
+    - 1390645838
+    - 1390645856
+    - 1390645483
+    - 1390645871
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

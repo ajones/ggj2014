@@ -4,7 +4,7 @@ using System.Collections;
 public class StickyObjectController : MonoBehaviour {
 	
 
-	void OnCollisionEnter(Collision collision ) {
+	void OnCollisionEnter2D(Collision2D collision ) {
 		if(collision.gameObject.tag=="hero"){ 
 			print("hit");
 			this.transform.parent = collision.gameObject.transform;
@@ -13,11 +13,13 @@ public class StickyObjectController : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerExit(Collider collider ) {
+	void OnTriggerExit2D(Collider2D collider ) {
 		if(collider.gameObject.tag=="hero"){ 
-			this.collider.isTrigger = false;
-			Rigidbody rb = this.gameObject.AddComponent<Rigidbody>();
-			rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ;
+			this.collider2D.isTrigger = false;
+			this.gameObject.AddComponent<Rigidbody2D>();
+			//rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ;
+			//rb.interpolation = RigidbodyInterpolation.Interpolate;
+			//rb.collisionDetectionMode = CollisionDetectionMode.Discrete;
 		}
 	}
 

@@ -44,6 +44,7 @@ public class MovementController : MonoBehaviour {
 			this.popUp = PopupManager.getInstance().showPopupFromGameObject("testPopup",this.gameObject, new Vector3(0,0.75f,0));
 
 			this.quack();
+			EventManager.TriggerEvent(new HeroInteractEvent());
 		}
 	}
 

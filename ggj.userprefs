@@ -1,10 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Character/HeroAnimationController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Interaction/InteractionArea.cs">
     <Files>
       <File FileName="Assets/Scripts/DialogPopup/PopupManager.cs" Line="15" Column="43" />
-      <File FileName="Assets/Scripts/Character/MovementController.cs" Line="24" Column="4" />
-      <File FileName="Assets/Scripts/Character/HeroAnimationController.cs" Line="43" Column="6" />
+      <File FileName="Assets/Scripts/Character/MovementController.cs" Line="44" Column="4" />
+      <File FileName="Assets/Scripts/Character/HeroAnimationController.cs" Line="79" Column="3" />
+      <File FileName="Assets/Scripts/Sound/SoundManager.cs" Line="518" Column="28" />
+      <File FileName="Assets/Scripts/Interaction/InteractionArea.cs" Line="21" Column="45" />
+      <File FileName="Assets/Scripts/Interaction/InteractionTarget.cs" Line="19" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

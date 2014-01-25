@@ -25,12 +25,15 @@ MonoBehaviour:
     spriteNames:
     - duck
     - duckFlap
+    - sword
     spriteTextureGUIDs:
     - cb72510bb97504d3fbefd5f65d00c219
     - d5d0ecf5a1b1e4b70a4a3384947b0287
+    - f89195319b03847358c796ec9ff94bc5
     spriteTextureTimeStamps:
     - 1390596898
-    - 1390604297
+    - 1390606180
+    - 1390607317
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

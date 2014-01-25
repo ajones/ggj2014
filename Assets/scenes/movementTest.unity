@@ -88,8 +88,8 @@ GameObject:
   - 114: {fileID: 20043973}
   - 50: {fileID: 20043980}
   - 114: {fileID: 20043978}
-  - 61: {fileID: 20043979}
   - 114: {fileID: 20043981}
+  - 61: {fileID: 20043979}
   m_Layer: 0
   m_Name: hero
   m_TagString: hero
@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   library: {fileID: 11400000, guid: d77b271716e6941d7875ae1514a4f249, type: 2}
-  defaultClipId: 0
-  playAutomatically: 0
+  defaultClipId: 4
+  playAutomatically: 1
 --- !u!114 &20043974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,10 +124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collection: {fileID: 11400000, guid: a698cd6100c9548b1a1cbb15a8068e20, type: 2}
+  collection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 0
+  _spriteId: 4
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
   edgeCollider2D: []
@@ -192,15 +192,14 @@ MonoBehaviour:
 --- !u!61 &20043979
 BoxCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100000, guid: 94c9a7b88af2d4762b77520931f1a370,
-    type: 2}
-  m_PrefabInternal: {fileID: 789335521}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20043972}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .409999937, y: .329999983}
-  m_Center: {x: .00500000268, y: .234999999}
+  m_Size: {x: .409999937, y: .399999976}
+  m_Center: {x: .00500000268, y: .199999988}
 --- !u!50 &20043980
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -242,7 +241,7 @@ GameObject:
   - 61: {fileID: 160766385}
   m_Layer: 0
   m_Name: floor
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -411,6 +410,42 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 9.98727894
       objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 64a775d1241114e89a0db96621410db4, type: 2}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 64a775d1241114e89a0db96621410db4, type: 2}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 64a775d1241114e89a0db96621410db4, type: 2}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 64a775d1241114e89a0db96621410db4, type: 2}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 64a775d1241114e89a0db96621410db4, type: 2}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 64a775d1241114e89a0db96621410db4, type: 2}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 64a775d1241114e89a0db96621410db4, type: 2}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 64a775d1241114e89a0db96621410db4, type: 2}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 64a775d1241114e89a0db96621410db4, type: 2}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6500008, guid: 64a775d1241114e89a0db96621410db4, type: 2}
     - {fileID: 6500004, guid: 64a775d1241114e89a0db96621410db4, type: 2}
@@ -438,7 +473,7 @@ GameObject:
   - 61: {fileID: 476487717}
   m_Layer: 0
   m_Name: floor
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,7 +543,7 @@ GameObject:
   - 61: {fileID: 585731049}
   m_Layer: 0
   m_Name: floor
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -578,7 +613,7 @@ GameObject:
   - 61: {fileID: 622590795}
   m_Layer: 0
   m_Name: step
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -648,7 +683,7 @@ GameObject:
   - 61: {fileID: 770455588}
   m_Layer: 0
   m_Name: floor
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -744,7 +779,33 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11400002, guid: 94c9a7b88af2d4762b77520931f1a370, type: 2}
+      propertyPath: collection
+      value: 
+      objectReference: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+    - target: {fileID: 11400000, guid: 94c9a7b88af2d4762b77520931f1a370, type: 2}
+      propertyPath: defaultClipId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 94c9a7b88af2d4762b77520931f1a370, type: 2}
+      propertyPath: _spriteId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 94c9a7b88af2d4762b77520931f1a370, type: 2}
+      propertyPath: m_Size.y
+      value: .50999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 94c9a7b88af2d4762b77520931f1a370, type: 2}
+      propertyPath: playAutomatically
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 94c9a7b88af2d4762b77520931f1a370, type: 2}
+      propertyPath: boxCollider2D
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6100000, guid: 94c9a7b88af2d4762b77520931f1a370, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 94c9a7b88af2d4762b77520931f1a370, type: 2}
   m_RootGameObject: {fileID: 20043972}
   m_IsPrefabParent: 0
@@ -857,7 +918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collection: {fileID: 11400000, guid: a698cd6100c9548b1a1cbb15a8068e20, type: 2}
+  collection: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 2, y: 2, z: 1}
   _spriteId: 2
@@ -930,7 +991,7 @@ Camera:
   near clip plane: .300000012
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 60
   m_Depth: -1
   m_CullingMask:
@@ -947,7 +1008,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1274547441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.7200012, y: 50.0999985, z: -10}
+  m_LocalPosition: {x: 39.7200012, y: 50.0999985, z: -150}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1022,7 +1083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collection: {fileID: 11400000, guid: a698cd6100c9548b1a1cbb15a8068e20, type: 2}
+  collection: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 2, y: 2, z: 1}
   _spriteId: 2
@@ -1112,7 +1173,7 @@ GameObject:
   - 61: {fileID: 1428785902}
   m_Layer: 0
   m_Name: floor
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1182,7 +1243,7 @@ GameObject:
   - 61: {fileID: 1490134845}
   m_Layer: 0
   m_Name: floor
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1317,7 +1378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collection: {fileID: 11400000, guid: a698cd6100c9548b1a1cbb15a8068e20, type: 2}
+  collection: {fileID: 0}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 2, y: 2, z: 1}
   _spriteId: 2
@@ -1407,7 +1468,7 @@ GameObject:
   - 61: {fileID: 1676617532}
   m_Layer: 0
   m_Name: floor
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1477,7 +1538,7 @@ GameObject:
   - 61: {fileID: 1914704851}
   m_Layer: 0
   m_Name: step
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

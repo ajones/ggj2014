@@ -41,14 +41,14 @@ MonoBehaviour:
   clips:
   - name: flap
     frames:
-    - spriteCollection: {fileID: 11400000, guid: a698cd6100c9548b1a1cbb15a8068e20,
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
         type: 2}
       spriteId: 0
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    - spriteCollection: {fileID: 11400000, guid: a698cd6100c9548b1a1cbb15a8068e20,
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
         type: 2}
       spriteId: 1
       triggerEvent: 0
@@ -58,18 +58,136 @@ MonoBehaviour:
     fps: 10
     loopStart: 0
     wrapMode: 0
-  - name: 
+  - name: sitDown
     frames:
-    - spriteCollection: {fileID: 11400000, guid: a698cd6100c9548b1a1cbb15a8068e20,
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
         type: 2}
-      spriteId: 0
+      spriteId: 5
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 30
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 10
+    loopStart: 0
+    wrapMode: 2
+  - name: sitUp
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 10
     loopStart: 0
     wrapMode: 0
+  - name: walk
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 10
+    loopStart: 0
+    wrapMode: 0
+  - name: stand
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 10
+    loopStart: 0
+    wrapMode: 6
+  - name: grab
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 10
+    loopStart: 0
+    wrapMode: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -9,6 +9,12 @@ public class MovementController : MonoBehaviour {
 	GameObject capturedItem = null;
 	GameObject popUp = null;
 
+	tk2dSprite sprite;
+
+	void Awake() {
+		this.sprite = this.gameObject.GetComponent<tk2dSprite>();
+	}
+
 
 	// Update is called once per frame
 	void Update () {
@@ -19,18 +25,13 @@ public class MovementController : MonoBehaviour {
 		if (Input.GetKey ("right") || Input.GetKey ("d")){
 			this.destroyPopupIfNecessary();
 			this.rigidbody2D.AddForce(new Vector3(movementSpeed,0,0));
-			this.transform.localScale = new Vector3(
-				Mathf.Abs (this.transform.localScale.x),
-				this.transform.localScale.y,
-				this.transform.localScale.z);
+
+			this.sprite.FlipX = false;
 		}
 		if (Input.GetKey ("left") || Input.GetKey ("a")){
 			this.destroyPopupIfNecessary();
 			this.rigidbody2D.AddForce(new Vector3(movementSpeed * -1,0,0));
-			this.transform.localScale = new Vector3(
-				Mathf.Abs (this.transform.localScale.x) * -1,
-				this.transform.localScale.y,
-				this.transform.localScale.z);
+			this.sprite.FlipX = true;
 		}
 		if (Input.GetKeyDown ("space")){
 			if (this.capturedItem != null){

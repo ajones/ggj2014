@@ -4,7 +4,6 @@ using System.Collections;
 public class HeroAnimationController : MonoBehaviour {
 
 	tk2dSpriteAnimator animator;
-	bool isAnimating = true;
 
 	bool isFlapping = false;
 	bool isWalking = false;

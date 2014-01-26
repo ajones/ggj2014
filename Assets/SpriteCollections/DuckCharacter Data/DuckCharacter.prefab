@@ -140,10 +140,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .351570308, y: .523441434}
-    - {x: .351570308, y: .574214816}
-    - {x: .609367192, y: .523441434}
-    - {x: .609367192, y: .574214816}
+    - {x: .0156328119, y: .707035184}
+    - {x: .0156328119, y: .757808566}
+    - {x: .273429692, y: .707035184}
+    - {x: .273429692, y: .757808566}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: ccd5ca3b09b074a74ac1f243fe41a3bf, type: 2}
     materialId: 0
@@ -386,10 +386,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .656257808, y: .359378904}
-    - {x: .656257808, y: .535152316}
-    - {x: .859367192, y: .359378904}
-    - {x: .859367192, y: .535152316}
+    - {x: .351570308, y: .523441434}
+    - {x: .351570308, y: .699214816}
+    - {x: .554679692, y: .523441434}
+    - {x: .554679692, y: .699214816}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: ccd5ca3b09b074a74ac1f243fe41a3bf, type: 2}
     materialId: 0
@@ -550,10 +550,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .640632808, y: .550785184}
-    - {x: .773429692, y: .550785184}
-    - {x: .640632808, y: .609371066}
-    - {x: .773429692, y: .609371066}
+    - {x: .585945308, y: .621097684}
+    - {x: .718742192, y: .621097684}
+    - {x: .585945308, y: .679683566}
+    - {x: .718742192, y: .679683566}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: ccd5ca3b09b074a74ac1f243fe41a3bf, type: 2}
     materialId: 0
@@ -591,10 +591,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .804695308, y: .550785184}
-    - {x: .929679692, y: .550785184}
-    - {x: .804695308, y: .605464816}
-    - {x: .929679692, y: .605464816}
+    - {x: .750007808, y: .621097684}
+    - {x: .874992192, y: .621097684}
+    - {x: .750007808, y: .675777316}
+    - {x: .874992192, y: .675777316}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: ccd5ca3b09b074a74ac1f243fe41a3bf, type: 2}
     materialId: 0
@@ -632,10 +632,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .890632808, y: .398441404}
-    - {x: .890632808, y: .421871096}
-    - {x: .945304692, y: .398441404}
-    - {x: .945304692, y: .421871096}
+    - {x: .265632808, y: .589847684}
+    - {x: .265632808, y: .613277316}
+    - {x: .320304692, y: .589847684}
+    - {x: .320304692, y: .613277316}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: ccd5ca3b09b074a74ac1f243fe41a3bf, type: 2}
     materialId: 0
@@ -673,10 +673,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .890632808, y: .359378904}
-    - {x: .945304692, y: .359378904}
-    - {x: .890632808, y: .382808596}
-    - {x: .945304692, y: .382808596}
+    - {x: .265632808, y: .550785184}
+    - {x: .320304692, y: .550785184}
+    - {x: .265632808, y: .574214816}
+    - {x: .320304692, y: .574214816}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: ccd5ca3b09b074a74ac1f243fe41a3bf, type: 2}
     materialId: 0
@@ -739,6 +739,88 @@ MonoBehaviour:
     polygonCollider2D: []
     edgeCollider2D: []
     attachPoints: []
+  - name: duckFloat0
+    boundsData:
+    - {x: .00500000268, y: .049999997, z: 0}
+    - {x: .409999967, y: .299999982, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .419999987, y: .399999976, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.199999988, y: -.099999994, z: 0}
+    - {x: .209999993, y: -.099999994, z: 0}
+    - {x: -.199999988, y: .199999988, z: 0}
+    - {x: .209999993, y: .199999988, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .656257808, y: .359378904}
+    - {x: .976554692, y: .359378904}
+    - {x: .656257808, y: .476558596}
+    - {x: .976554692, y: .476558596}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ccd5ca3b09b074a74ac1f243fe41a3bf, type: 2}
+    materialId: 0
+    sourceTextureGUID: b39a8c87a142d4d9aafc67bb7f1190ec
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: duckFloat1
+    boundsData:
+    - {x: .00500000268, y: .0450000018, z: 0}
+    - {x: .409999967, y: .289999992, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .419999987, y: .399999976, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.199999988, y: -.099999994, z: 0}
+    - {x: .209999993, y: -.099999994, z: 0}
+    - {x: -.199999988, y: .189999998, z: 0}
+    - {x: .209999993, y: .189999998, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .656257808, y: .492191404}
+    - {x: .976554692, y: .492191404}
+    - {x: .656257808, y: .605464816}
+    - {x: .976554692, y: .605464816}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: ccd5ca3b09b074a74ac1f243fe41a3bf, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8e5c36df3e2c9449c909bd941837a36d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
   premultipliedAlpha: 0
   material: {fileID: 0}
   materials:
@@ -756,7 +838,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 50
-  buildKey: 1401784107
+  buildKey: 2119273684
   dataGuid: d355a1a4b242348788d271b15d95e890
   managedSpriteCollection: 0
   hasPlatformData: 0

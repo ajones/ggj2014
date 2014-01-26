@@ -21,6 +21,8 @@ public class HeroAnimationController : MonoBehaviour {
 	public bool isOnRightWall = false;
 	public bool isOnLeftWall = false;
 
+	private bool firstSplashOff;
+
 	float sitDelay = 1.0f;
 	
 	void Awake() {
@@ -68,8 +70,12 @@ public class HeroAnimationController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D theCollision) {
 		if (theCollision.gameObject.tag.Equals("lake")) {
-			int sound = Random.Range (0, 2);
-			SoundManager.getInstance().playSoundEffect("splash" + sound);
+			if (!firstSplashOff) {
+				firstSplashOff = true;
+			} else {
+				int sound = Random.Range (0, 2);
+				SoundManager.getInstance().playSoundEffect("splash" + sound);
+			}
 			this.isInLake = true;
 			this.isGrounded = false;
 		}

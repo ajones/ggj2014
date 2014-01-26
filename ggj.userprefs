@@ -11,7 +11,7 @@
       <File FileName="Assets/Scripts/Interaction/CameraInteractionTarget.cs" Line="1" Column="1" />
       <File FileName="Assets/TK2DROOT/tk2d/Code/Sprites/tk2dSprite.cs" Line="11" Column="36" />
       <File FileName="Assets/TK2DROOT/tk2d/Code/Sprites/tk2dBaseSprite.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Menu/MenuController.cs" Line="22" Column="3" />
+      <File FileName="Assets/Scripts/Menu/MenuController.cs" Line="40" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

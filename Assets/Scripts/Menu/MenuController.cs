@@ -38,5 +38,8 @@ public class MenuController : MonoBehaviour {
 			yield return new WaitForEndOfFrame();	
 		}
 		bg.color = new Color(bg.color.r,bg.color.g,bg.color.b,0); 
+
+
+		GameObject.Destroy(this.gameObject);
 	}
 }

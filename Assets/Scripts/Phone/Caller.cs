@@ -4,6 +4,7 @@ using System.Collections;
 public class Caller : MonoBehaviour, IEventListener {
 
 	public tk2dSpriteAnimator anim;
+	public GameObject phoneSprite;
 
 	public float shakeSize;
 	public float shakeStep;
@@ -31,10 +32,10 @@ public class Caller : MonoBehaviour, IEventListener {
 	}
 
 	IEnumerator ShakePhone() {
-		Vector3 startingPos = this.transform.localPosition;
+		Vector3 startingPos = phoneSprite.transform.localPosition;
 	
 		while (anim.IsPlaying("Ring")) {
-			this.transform.localPosition = new Vector3 (
+			phoneSprite.transform.localPosition = new Vector3 (
 				startingPos.x + ((Random.value * shakeSize) - shakeSize / 2f),
 				startingPos.y,
 				startingPos.z 
@@ -43,7 +44,7 @@ public class Caller : MonoBehaviour, IEventListener {
 			yield return new WaitForSeconds (shakeStep);
 		}
 	
-		this.transform.localPosition = startingPos;
+		phoneSprite.transform.localPosition = startingPos;
 	}
 
 	bool IEventListener.HandleEvent(IEvent evt) {

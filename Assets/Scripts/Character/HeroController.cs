@@ -52,11 +52,20 @@ public class HeroController : MonoBehaviour {
 			GameObject.Destroy(this.capturedItem);
 			this.capturedItem = null;
 			EventManager.TriggerEvent(new GameStateProgressEvent(GameManager.GameState.FeedBabies));
+			EventManager.TriggerEvent(new BabyFedEvent());
 		}
 	}
 
 	public void SetMovementInteractionEnabled(bool enabled) {
 		this.movementController.interactionEnabled = enabled;
+	}
+
+	public void DropItem() {
+		if (this.capturedItem){
+			GameObject.Destroy(this.capturedItem);
+			this.capturedItem = null;
+			EventManager.TriggerEvent(new GameStateProgressEvent(GameManager.GameState.ItemDrop));
+		}
 	}
 
 }

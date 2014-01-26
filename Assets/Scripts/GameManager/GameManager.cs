@@ -4,24 +4,26 @@ using System.Collections;
 public class GameManager : Manager, IEventListener {
 
 	public enum GameState {
-		Intro,
-		AquireBread,
 		FeedBabies,
 		ApproachDoor,
-		AquirePhone,
-		PlaceObject,
-		AquireObject
+		ItemDrop,
+		AquireBread,
+		GameOver
 	};
 
 
-	GameState[] steps = new GameState[2]{
+	GameState[] steps = new GameState[6]{
 		GameState.FeedBabies,
-		GameState.ApproachDoor
+		GameState.ApproachDoor,
+		GameState.ItemDrop,
+		GameState.ItemDrop,
+		GameState.ItemDrop,
+		GameState.GameOver
 	};
 
 	private int currentStep = 0;
 	
-
+	public BreadSpawner breadSpawner;
 
 
 	/////////////////////  BOOTSTRAP  /////////////////////
@@ -57,11 +59,10 @@ public class GameManager : Manager, IEventListener {
 		if (this.steps[this.currentStep] == stateProgress){
 
 			switch(stateProgress){
-				case GameState.FeedBabies :
-					EventManager.TriggerEvent(new BabyFedEvent());
+				case GameState.ItemDrop :
+					this.breadSpawner.SpawnBread();
 					break;
 			}
-
 
 
 			this.currentStep ++;

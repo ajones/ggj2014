@@ -58,7 +58,6 @@ public class FollowController : MonoBehaviour,IEventListener {
 			newCamPosition.y += yDiff;
 			camTransform.position = newCamPosition;
 			// Move our position a step closer to the target.
-			//camTransform.position = Vector3.Slerp(camTransform.position, newCamPosition, Time.deltaTime);
     	}
 			
 
@@ -93,7 +92,7 @@ public class FollowController : MonoBehaviour,IEventListener {
 		float accum = 0;
 		Vector3 start = camTransform.position;
 
-		while(accum < 1){
+		while(accum <= 1){
 			camTransform.position = Vector3.Slerp(
 				start,
 				new Vector3(
@@ -101,14 +100,10 @@ public class FollowController : MonoBehaviour,IEventListener {
 					target.transform.position.y,
 					camTransform.position.z	),
 				accum);
-			accum += Time.deltaTime /3f;
-			yield return new WaitForEndOfFrame();
+			accum += Time.deltaTime / 3f;
+			yield return null;
 		}
 		this.shouldFollow = true;
-		camTransform.position = new Vector3(
-			target.transform.position.x,
-			target.transform.position.y,
-			camTransform.position.z	);
 	}
 
 	bool IEventListener.HandleEvent(IEvent evt) {

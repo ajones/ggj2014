@@ -200,6 +200,25 @@ MonoBehaviour:
     fps: 10
     loopStart: 0
     wrapMode: 0
+  - name: extraFloat
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: 825390633747143d3a613acde51cc398,
+        type: 2}
+      spriteId: 21
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 825390633747143d3a613acde51cc398,
+        type: 2}
+      spriteId: 22
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 1.25
+    loopStart: 0
+    wrapMode: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

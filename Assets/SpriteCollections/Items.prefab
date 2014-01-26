@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: DuckMallard
+  m_Name: Items
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,18 +59,18 @@ MonoBehaviour:
   forcedTextureWidth: 2048
   forcedTextureHeight: 2048
   textureCompression: 0
-  atlasWidth: 64
-  atlasHeight: 128
+  atlasWidth: 16
+  atlasHeight: 16
   forceSquareAtlas: 0
-  atlasWastage: 63.1958008
+  atlasWastage: 6.25
   allowMultipleAtlases: 0
   removeDuplicates: 1
   textureParams:
-  - name: mallardFloat0
+  - name: phone0
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 1a50093777457465083344f097cd0561, type: 3}
+    texture: {fileID: 2800000, guid: 20830289e7ef144e483c55b48b4c83e7, type: 3}
     materialId: 0
     anchor: 7
     anchorX: 0
@@ -106,11 +106,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: mallardFloat1
+  - name: phone1
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: eefa6b7aba74a4c0d89f8575ec09cb62, type: 3}
+    texture: {fileID: 2800000, guid: 8ee487ed397d742efb30d5c10b3562ac, type: 3}
     materialId: 0
     anchor: 7
     anchorX: 0
@@ -146,14 +146,14 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  spriteCollection: {fileID: 11400000, guid: 1eff3ca590e9b43b89a04f517818f2ff, type: 2}
+  spriteCollection: {fileID: 11400000, guid: b2b663419b69e4640b67350c5037f33a, type: 2}
   premultipliedAlpha: 0
   altMaterials:
-  - {fileID: 2100000, guid: 2ec1b187032b34ed99baf78aefc556d3, type: 2}
+  - {fileID: 2100000, guid: e0cb8120445434bc3afef96a1bc7cad0, type: 2}
   atlasMaterials:
-  - {fileID: 2100000, guid: 2ec1b187032b34ed99baf78aefc556d3, type: 2}
+  - {fileID: 2100000, guid: e0cb8120445434bc3afef96a1bc7cad0, type: 2}
   atlasTextures:
-  - {fileID: 2800000, guid: 7cb44289529e84f84bad3af40121deac, type: 3}
+  - {fileID: 2800000, guid: 7b1e3cbc5fd974681b2026e83d49c6e2, type: 3}
   atlasTextureFiles: []
   useTk2dCamera: 0
   targetHeight: 640

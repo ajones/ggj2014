@@ -62,15 +62,15 @@ MonoBehaviour:
   atlasWidth: 4096
   atlasHeight: 4096
   forceSquareAtlas: 0
-  atlasWastage: 17.6908016
+  atlasWastage: 12.8033276
   allowMultipleAtlases: 1
   removeDuplicates: 1
   textureParams:
-  - name: 
+  - name: door
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 0}
+    texture: {fileID: 2800000, guid: e57e3e886d18a47549139a0c778d8af9, type: 3}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -106,11 +106,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: Z-1OPEN
+  - name: Z-inside
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 0a55ab9c324bc4599bf1013bcca87f4b, type: 3}
+    texture: {fileID: 2800000, guid: 64482b5e175654ec4ae75cd70edb4bd8, type: 3}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -351,10 +351,8 @@ MonoBehaviour:
   altMaterials: []
   atlasMaterials:
   - {fileID: 2100000, guid: 4a6a05b6a3d4d4b88b280795223abfa1, type: 2}
-  - {fileID: 2100000, guid: dcafc867632084680ab23237019d5b7a, type: 2}
   atlasTextures:
   - {fileID: 2800000, guid: 72898fc14f1ab4086815c9aca10d5780, type: 3}
-  - {fileID: 2800000, guid: e2538c74a86294ba68ccea4767fcc0b5, type: 3}
   atlasTextureFiles: []
   useTk2dCamera: 0
   targetHeight: 640
@@ -381,7 +379,7 @@ MonoBehaviour:
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
-  editorDisplayScale: 1
+  editorDisplayScale: 1.66904056
   version: 4
   assetName: 
 --- !u!1001 &100100000

@@ -44,7 +44,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: ccd5ca3b09b074a74ac1f243fe41a3bf, type: 2}
+  - {fileID: 2100000, guid: e0cb8120445434bc3afef96a1bc7cad0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -108,10 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collection: {fileID: 11400000, guid: d355a1a4b242348788d271b15d95e890, type: 2}
+  collection: {fileID: 11400000, guid: b2b663419b69e4640b67350c5037f33a, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 2, y: 2, z: 1}
-  _spriteId: 15
+  _spriteId: 4
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
   edgeCollider2D: []

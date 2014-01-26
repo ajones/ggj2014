@@ -62,7 +62,7 @@ MonoBehaviour:
   atlasWidth: 4096
   atlasHeight: 4096
   forceSquareAtlas: 0
-  atlasWastage: 12.8033276
+  atlasWastage: 43.8875313
   allowMultipleAtlases: 1
   removeDuplicates: 1
   textureParams:
@@ -112,7 +112,7 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 64482b5e175654ec4ae75cd70edb4bd8, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 0
     anchorY: 0
     overrideMesh: {fileID: 0}
@@ -152,7 +152,7 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 19ed73e58c5eb440da3c77b85115b240, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 0
     anchorY: 0
     overrideMesh: {fileID: 0}
@@ -192,7 +192,7 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 4d088263d2f5447f48af65ddc03b4d77, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 0
     anchorY: 0
     overrideMesh: {fileID: 0}
@@ -232,7 +232,7 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 93a18208a75684f48a8b08705ea7b6ff, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 0
     anchorY: 0
     overrideMesh: {fileID: 0}
@@ -272,7 +272,7 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 9644f5885622d435eba256219a013341, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 0
     anchorY: 0
     overrideMesh: {fileID: 0}
@@ -312,7 +312,7 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: fa789a9a3f8534ddbb82e3851e8d0584, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 0
     anchorY: 0
     overrideMesh: {fileID: 0}
@@ -351,8 +351,10 @@ MonoBehaviour:
   altMaterials: []
   atlasMaterials:
   - {fileID: 2100000, guid: 4a6a05b6a3d4d4b88b280795223abfa1, type: 2}
+  - {fileID: 2100000, guid: 372cbdec4fce541718e2566cddd35676, type: 2}
   atlasTextures:
   - {fileID: 2800000, guid: 72898fc14f1ab4086815c9aca10d5780, type: 3}
+  - {fileID: 2800000, guid: f123a38ac54cf4f24a4ff1674741343f, type: 3}
   atlasTextureFiles: []
   useTk2dCamera: 0
   targetHeight: 640
@@ -379,7 +381,7 @@ MonoBehaviour:
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
-  editorDisplayScale: 1.66904056
+  editorDisplayScale: 1
   version: 4
   assetName: 
 --- !u!1001 &100100000

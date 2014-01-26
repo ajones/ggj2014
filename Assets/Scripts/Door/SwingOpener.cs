@@ -40,6 +40,6 @@ public class SwingOpener : MonoBehaviour, IEventListener {
 			StartCoroutine("SwingOpen");
 			break;
 		}        
-		return true;
+		return false;
 	}
 }

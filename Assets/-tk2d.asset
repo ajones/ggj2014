@@ -13,25 +13,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 4
   spriteAnimationIndex:
+  - assetGUID: f1d37c4268e3b45aebd06e963ff86cf8
+    dataGUID: 
+    managed: 0
+    loadable: 0
   - assetGUID: d77b271716e6941d7875ae1514a4f249
     dataGUID: 
     managed: 0
     loadable: 0
-  - assetGUID: f1d37c4268e3b45aebd06e963ff86cf8
+  - assetGUID: a585bce8556f74b898853f0b47c0603a
     dataGUID: 
     managed: 0
     loadable: 0
   fontIndex: []
   spriteCollectionIndex:
-  - name: Popups
-    spriteCollectionGUID: 68530048a56ea4d6e976298298f86267
-    spriteCollectionDataGUID: de669a5f44ea7456a976501ab55c9268
+  - name: Backgrounds
+    spriteCollectionGUID: b5d84939808a548d58b27e2a0ed55e6a
+    spriteCollectionDataGUID: d7364f4f96c334cda9079cf2172d6e13
     spriteNames:
-    - whitePixel
+    - house
     spriteTextureGUIDs:
-    - 3584237fbb238498bb6d646a19ba9c1c
+    - 03a9d5e05bcb040d7b538448afbaba50
     spriteTextureTimeStamps:
-    - 1390609059
+    - 1390673126
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -88,25 +92,90 @@ MonoBehaviour:
     - 1390651986
     - 1390651986
     - 1390651986
-    - 1390666580
-    - 1390666645
-    - 1390664827
-    - 1390664795
-    - 1390664870
+    - 1390673126
+    - 1390673126
+    - 1390673126
+    - 1390673126
+    - 1390673126
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
     version: 3
-  - name: Backgrounds
-    spriteCollectionGUID: b5d84939808a548d58b27e2a0ed55e6a
-    spriteCollectionDataGUID: d7364f4f96c334cda9079cf2172d6e13
+  - name: DuckMallard
+    spriteCollectionGUID: 7e495120fb32c4c44bc175b271b864ae
+    spriteCollectionDataGUID: 1eff3ca590e9b43b89a04f517818f2ff
     spriteNames:
-    - house
+    - mallardFloat0
+    - mallardFloat1
     spriteTextureGUIDs:
-    - 03a9d5e05bcb040d7b538448afbaba50
+    - 1a50093777457465083344f097cd0561
+    - eefa6b7aba74a4c0d89f8575ec09cb62
     spriteTextureTimeStamps:
-    - 1390670619
+    - 1390673126
+    - 1390673126
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
     version: 3
+  - name: Items
+    spriteCollectionGUID: f1fedb3482ffb44818137a1fe85d5694
+    spriteCollectionDataGUID: b2b663419b69e4640b67350c5037f33a
+    spriteNames:
+    - phone0
+    - phone1
+    - flower
+    spriteTextureGUIDs:
+    - 20830289e7ef144e483c55b48b4c83e7
+    - 8ee487ed397d742efb30d5c10b3562ac
+    - afc347bde3b9e46f48b7c307132dde07
+    spriteTextureTimeStamps:
+    - 1390673126
+    - 1390673126
+    - 1390669347
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: Popups
+    spriteCollectionGUID: 68530048a56ea4d6e976298298f86267
+    spriteCollectionDataGUID: de669a5f44ea7456a976501ab55c9268
+    spriteNames:
+    - whitePixel
+    spriteTextureGUIDs:
+    - 3584237fbb238498bb6d646a19ba9c1c
+    spriteTextureTimeStamps:
+    - 1390610081
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: 
+    spriteCollectionGUID: 
+    spriteCollectionDataGUID: 4bed39f34ae56423cbb08052ddd372a4
+    spriteNames: []
+    spriteTextureGUIDs: []
+    spriteTextureTimeStamps: []
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 0
+  - name: 
+    spriteCollectionGUID: 
+    spriteCollectionDataGUID: 90636c2f9cd394ce9870b6996cbc9169
+    spriteNames: []
+    spriteTextureGUIDs: []
+    spriteTextureTimeStamps: []
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 0
+  - name: 
+    spriteCollectionGUID: 
+    spriteCollectionDataGUID: 0cc88ba38f32140028949657d5d3cf27
+    spriteNames: []
+    spriteTextureGUIDs: []
+    spriteTextureTimeStamps: []
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 0

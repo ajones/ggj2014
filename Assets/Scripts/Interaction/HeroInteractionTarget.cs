@@ -19,6 +19,12 @@ public class HeroInteractionTarget : InteractionTarget {
 			if (GameManager.getInstance().getGameState() == GameManager.GameState.ApproachDoor){
 				this.heroController.SetMovementInteractionEnabled(false);
 				EventManager.TriggerEvent(new DoorOpen());
+				StartCoroutine(WaitThenEnableInteraction());
+			}
+			break;
+		case "item-drop":
+			if (GameManager.getInstance().getGameState() == GameManager.GameState.ItemDrop){
+				this.heroController.DropItem();
 			}
 			break;
 		}
@@ -30,6 +36,14 @@ public class HeroInteractionTarget : InteractionTarget {
 	
 	
 	public override void heroInteracted() {
+	}
+
+
+	IEnumerator WaitThenEnableInteraction() {
+		yield return new WaitForSeconds(1f);
+		this.heroController.SetMovementInteractionEnabled(true);
+		EventManager.TriggerEvent(new GameStateProgressEvent(GameManager.GameState.ApproachDoor));
+
 	}
 
 

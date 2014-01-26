@@ -13,6 +13,7 @@ public class BabiesController : MonoBehaviour,IEventListener {
 	bool IEventListener.HandleEvent(IEvent evt) {
 		switch (evt.GetName()) {
 		case "BabyFedEvent":
+			Debug.Log ("Baby Fed Event");
 			this.AnimateBabyExit();
 			break;
 		}        

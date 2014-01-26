@@ -12,9 +12,10 @@ public class GameManager : Manager, IEventListener {
 	};
 
 
-	GameState[] steps = new GameState[6]{
+	GameState[] steps = new GameState[7]{
 		GameState.FeedBabies,
 		GameState.ApproachDoor,
+		GameState.ItemDrop,
 		GameState.ItemDrop,
 		GameState.ItemDrop,
 		GameState.ItemDrop,
@@ -58,11 +59,13 @@ public class GameManager : Manager, IEventListener {
 	void CheckProgress(GameState stateProgress){
 		if (this.steps[this.currentStep] == stateProgress){
 
-			switch(stateProgress){
-				case GameState.ItemDrop :
-					this.breadSpawner.SpawnBread();
-					break;
+			switch(this.currentStep){
+			case 0:
+				ConversationManager.getInstance().PlayConversation1();
+				break;
 			}
+
+
 
 
 			this.currentStep ++;

@@ -133,14 +133,17 @@ MonoBehaviour:
     - phone0
     - phone1
     - flower
+    - breadBook
     spriteTextureGUIDs:
     - 20830289e7ef144e483c55b48b4c83e7
     - 8ee487ed397d742efb30d5c10b3562ac
     - afc347bde3b9e46f48b7c307132dde07
+    - 274da9a16dac945d4b66d380bee193b9
     spriteTextureTimeStamps:
-    - 1390673151
-    - 1390673151
-    - 1390681678
+    - 1390673126
+    - 1390673126
+    - 1390669347
+    - 1390682855
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

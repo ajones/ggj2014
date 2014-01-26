@@ -13,6 +13,8 @@ public class HeroController : MonoBehaviour {
 
 
 	void itemCaptured (GameObject item) {
+		if (this.capturedItem != null) return;
+		item.transform.parent = this.transform;
 		this.capturedItem = item;
 		GameObject.Destroy(this.capturedItem.rigidbody2D);
 		this.movementController.SetUpCapturedItem();
@@ -62,6 +64,25 @@ public class HeroController : MonoBehaviour {
 
 	public void DropItem() {
 		if (this.capturedItem){
+			switch(this.capturedItem.gameObject.name){
+			case "phone":
+				ConversationManager.getInstance().PlayConversation2();
+				break;
+			case "flower":
+				ConversationManager.getInstance().PlayConversation3();
+				break;
+			case "picture":
+				ConversationManager.getInstance().PlayConversation4();
+				break;
+			case "book":
+				ConversationManager.getInstance().PlayConversation5();
+				break;
+			}
+
+			if (this.capturedItem.gameObject.name != "book"){
+				GameManager.getInstance().breadSpawner.SpawnBread();
+			}
+
 			GameObject.Destroy(this.capturedItem);
 			this.capturedItem = null;
 			EventManager.TriggerEvent(new GameStateProgressEvent(GameManager.GameState.ItemDrop));

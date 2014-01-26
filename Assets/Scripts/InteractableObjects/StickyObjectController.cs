@@ -4,7 +4,6 @@ using System.Collections;
 public class StickyObjectController : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D collision ) {
 		if(collision.gameObject.tag=="hero"){ 
-			this.transform.parent = collision.gameObject.transform;
 			collision.gameObject.SendMessage("itemCaptured", this.gameObject);
 			this.itemGrabbed();
 		}

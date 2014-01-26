@@ -24,6 +24,7 @@ public class Thrower : MonoBehaviour, IEventListener {
 
 	void Throw() {
 		GameObject newPhone = Instantiate (phoneShaker, origin, phoneShaker.transform.rotation) as GameObject;
+		newPhone.name = "phone";
 		Rigidbody2D rBody = newPhone.GetComponentInChildren<Rigidbody2D> ();
 		rBody.AddForce (force);
 	}

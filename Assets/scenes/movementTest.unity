@@ -1720,9 +1720,10 @@ GameObject:
   - 23: {fileID: 1182603073}
   - 114: {fileID: 1182603072}
   - 114: {fileID: 1182603071}
+  - 114: {fileID: 1182603076}
   m_Layer: 0
   m_Name: BabyDuck1
-  m_TagString: Untagged
+  m_TagString: baby
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1803,6 +1804,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1182603069}
   m_Mesh: {fileID: 0}
+--- !u!114 &1182603076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1182603069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef54a834ca809447fbfcb674f842d6a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 12
 --- !u!1 &1189348011
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,9 +2320,10 @@ GameObject:
   - 23: {fileID: 1474893498}
   - 114: {fileID: 1474893497}
   - 114: {fileID: 1474893496}
+  - 114: {fileID: 1474893501}
   m_Layer: 0
   m_Name: BabyDuck2
-  m_TagString: Untagged
+  m_TagString: baby
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2390,6 +2404,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1474893494}
   m_Mesh: {fileID: 0}
+--- !u!114 &1474893501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1474893494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef54a834ca809447fbfcb674f842d6a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 12
 --- !u!1 &1486178325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,9 +2508,12 @@ GameObject:
   - 23: {fileID: 1526167868}
   - 114: {fileID: 1526167867}
   - 114: {fileID: 1526167866}
+  - 114: {fileID: 1526167872}
+  - 61: {fileID: 1526167873}
+  - 50: {fileID: 1526167871}
   m_Layer: 0
   m_Name: BabyDuck0
-  m_TagString: Untagged
+  m_TagString: baby
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2565,6 +2594,44 @@ Transform:
   m_LocalScale: {x: 30, y: 30, z: 1}
   m_Children: []
   m_Father: {fileID: 179122976}
+--- !u!50 &1526167871
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1526167865}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!114 &1526167872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1526167865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef54a834ca809447fbfcb674f842d6a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 12
+--- !u!61 &1526167873
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1526167865}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .169999972, y: .150000006}
+  m_Center: {x: -.105000004, y: .145000011}
 --- !u!1 &1563254022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2772,6 +2839,72 @@ Transform:
   m_Children:
   - {fileID: 1652780107}
   m_Father: {fileID: 0}
+--- !u!1 &1586594507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1586594509}
+  - 61: {fileID: 1586594508}
+  - 114: {fileID: 1586594510}
+  - 50: {fileID: 1586594511}
+  m_Layer: 0
+  m_Name: BabyDestroyer
+  m_TagString: babyDestroyer
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1586594508
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586594507}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 10, y: 100}
+  m_Center: {x: 0, y: 0}
+--- !u!4 &1586594509
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586594507}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 558.673645, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &1586594510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586594507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7aaee88af4804135a6a7a3ece5909ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1586594511
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586594507}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1610835603
 GameObject:
   m_ObjectHideFlags: 0
@@ -3326,9 +3459,10 @@ GameObject:
   - 23: {fileID: 1890424704}
   - 114: {fileID: 1890424703}
   - 114: {fileID: 1890424702}
+  - 114: {fileID: 1890424707}
   m_Layer: 0
   m_Name: BabyDuck3
-  m_TagString: Untagged
+  m_TagString: baby
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3409,6 +3543,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1890424700}
   m_Mesh: {fileID: 0}
+--- !u!114 &1890424707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890424700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef54a834ca809447fbfcb674f842d6a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 12
 --- !u!1 &1894035781
 GameObject:
   m_ObjectHideFlags: 0

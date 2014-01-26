@@ -5,6 +5,7 @@ public class Caller : MonoBehaviour, IEventListener {
 
 	public tk2dSpriteAnimator anim;
 	public GameObject phoneSprite;
+	private AudioSource audio;
 
 	public float shakeSize;
 	public float shakeStep;
@@ -23,6 +24,7 @@ public class Caller : MonoBehaviour, IEventListener {
 
 	// Use this for initialization
 	void Start () {
+		audio = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -33,6 +35,8 @@ public class Caller : MonoBehaviour, IEventListener {
 
 	IEnumerator ShakePhone() {
 		Vector3 startingPos = phoneSprite.transform.localPosition;
+		audio.Play ();
+
 	
 		while (anim.IsPlaying("Ring")) {
 			phoneSprite.transform.localPosition = new Vector3 (
@@ -44,6 +48,7 @@ public class Caller : MonoBehaviour, IEventListener {
 			yield return new WaitForSeconds (shakeStep);
 		}
 	
+		audio.Stop ();
 		phoneSprite.transform.localPosition = startingPos;
 	}
 

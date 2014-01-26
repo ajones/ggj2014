@@ -2,97 +2,94 @@
 using System.Collections;
 
 public class HeroAnimationController : MonoBehaviour {
-	
+
+	enum State
+	{
+		FLAPPING,
+		WALKING,
+		WAITING,
+		FLOATING
+	}; 
+
+	State currentState = State.FLOATING;
+
 	tk2dSpriteAnimator animator;
-	
-	bool isFlapping = false;
-	bool isWalking = false;
+
 	bool isGrounded = false;
-	bool isWaiting = false;
-	bool isFloating = false;
+	bool isInLake = false;
+	bool isSitting = false;
 
 	float sitDelay = 1.0f;
 	
 	void Awake() {
 		this.animator = this.gameObject.GetComponent<tk2dSpriteAnimator>();
-		this.animator.Play("walk");
+		this.animator.Play("float");
 	}
 	
 	void Update() {
-		if (this.isFloating) {
-			this.animator.Play("float");
-		} else if (this.isGrounded){
-			if (this.isFlapping){
+		Debug.Log ("Current state is " + currentState + " || isInLake : " + this.isInLake + " || isGrounded : " + this.isGrounded);
+		if (this.isGrounded) {
+			if (currentState == State.FLAPPING) {
+				currentState = State.WAITING;
 				this.animator.Play("stand");
-				this.isWalking = false;
-				this.isFlapping = false;
-			} else if (this.rigidbody2D.velocity.magnitude > 1f && !this.isWalking ){
-				if (this.isWaiting){
+				StartCoroutine("waitThenSit");
+			} else if (this.rigidbody2D.velocity.magnitude > 1f && currentState != State.WALKING) {
+				if (currentState == State.WAITING) {
 					StopCoroutine("waitThenSit");
-					this.isWaiting = false;
 				}
-				
+				currentState = State.WALKING;
 				this.animator.Play("walk");
-				this.isWalking = true;
-				this.isFlapping = false;
-				
-			} else if (this.rigidbody2D.velocity.magnitude <= 1f && this.isWalking){
-				if (!this.isWaiting){
-					this.animator.Play("stand");
-					StartCoroutine("waitThenSit");
-					this.isWaiting = true;
-					this.isWalking = false;
+			} else if (this.rigidbody2D.velocity.magnitude <= 1f && currentState == State.WALKING) {
+				this.animator.Play("stand");
+				StartCoroutine("waitThenSit");
+				currentState = State.WAITING;
+			}
+
+			if (this.rigidbody2D.velocity.magnitude <= 1f && currentState == State.WAITING) {
+				if (Input.GetKeyDown ("g")){
+					this.animator.Play("grab");
 				}
 			}
+		} else if (this.isInLake) {
+			if (currentState != State.FLOATING) {
+				this.animator.Play("float");
+				currentState = State.FLOATING;
+			}
 		} else {
-			if (!this.isFlapping){
+			if (currentState != State.FLAPPING) {
 				this.animator.Play("flap");
-				this.isFlapping = true;
-				this.isWalking = false;
-				this.isWaiting = false;
-				this.isFloating = false;
-			} 
+				currentState = State.FLAPPING;
+			}
 		}
 		
-		
-		if (Input.GetKeyDown ("g")){
-			this.animator.Play("grab");
-			this.isFlapping = false;
-			this.isWalking = false;
-			this.isWaiting = false;
-		}
+
 	}
-	
+
 	void OnTriggerEnter2D(Collider2D theCollision) {
-		if (theCollision.gameObject.tag == "lake") {
-			this.isWalking = false;
-			this.isFlapping = false;
-			this.isWaiting = false;
-			this.isFloating = true;
+		if (theCollision.gameObject.tag.Equals("lake")) {
+			this.isInLake = true;
+			this.isGrounded = false;
 		}
 	}
 	
 	void OnTriggerStay2D(Collider2D theCollision) {
 		if (theCollision.gameObject.tag == "lake") {
-			this.isWalking = false;
-			this.isFlapping = false;
-			this.isWaiting = false;
-			this.isFloating = true;
+			this.isInLake = true;
+			this.isGrounded = false;
 		}
 	}
 	
 	void OnTriggerExit2D(Collider2D theCollision) {
 		if (theCollision.gameObject.tag == "lake") {
-			this.isFloating = false;
-			this.isWalking = true;
-			this.animator.Play ("walk");
+			this.isInLake = false;
 		}
 	}
 	
 	
 	void OnCollisionEnter2D(Collision2D theCollision){
-		if(theCollision.gameObject.tag == "floor" && !this.isFloating) {
+		if(theCollision.gameObject.tag == "floor") {
 			this.isGrounded = true;
+			this.isInLake = false;
 		}
 	}
 	
@@ -103,20 +100,16 @@ public class HeroAnimationController : MonoBehaviour {
 	}
 	
 	void OnCollisionStay2D(Collision2D theCollision) {
-		if(theCollision.gameObject.tag == "floor" && !this.isFloating) {
+		if(theCollision.gameObject.tag == "floor") {
 			this.isGrounded = true;
+			this.isInLake = false;
 		}
 	}
 	
 	IEnumerator waitThenSit() {
 		yield return new WaitForSeconds(sitDelay);
-		
-		if (this.isWaiting){
+		if (currentState == State.WAITING){
 			this.animator.Play("sitDown");
-			this.isWalking = false;
-			this.isFlapping = false;
-			this.isGrounded = true;
-			this.isWaiting = false;
 		}
 		
 	}

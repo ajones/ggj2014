@@ -31,11 +31,29 @@ MonoBehaviour:
     spriteCollectionGUID: b5d84939808a548d58b27e2a0ed55e6a
     spriteCollectionDataGUID: d7364f4f96c334cda9079cf2172d6e13
     spriteNames:
-    - house
+    - 
+    - Z-1OPEN
+    - Z-1
+    - Z-3
+    - Z-0
+    - Z-4
+    - Z-2
     spriteTextureGUIDs:
-    - 03a9d5e05bcb040d7b538448afbaba50
+    - 
+    - 0a55ab9c324bc4599bf1013bcca87f4b
+    - 19ed73e58c5eb440da3c77b85115b240
+    - 4d088263d2f5447f48af65ddc03b4d77
+    - 93a18208a75684f48a8b08705ea7b6ff
+    - 9644f5885622d435eba256219a013341
+    - fa789a9a3f8534ddbb82e3851e8d0584
     spriteTextureTimeStamps:
-    - 1390673126
+    - 0
+    - 1390687001
+    - 1390686980
+    - 1390687050
+    - 1390687146
+    - 1390687071
+    - 1390687021
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

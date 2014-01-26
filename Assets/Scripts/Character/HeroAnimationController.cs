@@ -65,21 +65,19 @@ public class HeroAnimationController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D theCollision) {
 		if (theCollision.gameObject.tag == "lake") {
-			Debug.Log ("lake enter!");
+			
 			this.isFloating = true;
 		}
 	}
 
 	void OnTriggerStay2D(Collider2D theCollision) {
 		if (theCollision.gameObject.tag == "lake") {
-			Debug.Log ("lake stay!");
 			this.isFloating = true;
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D theCollision) {
 		if (theCollision.gameObject.tag == "lake") {
-			Debug.Log ("lake exit!");
 			this.isFloating = false;
 			if (!this.isFlapping) {
 				this.isWalking = true;

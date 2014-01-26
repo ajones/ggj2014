@@ -14,7 +14,6 @@ public class DestroyerOnLeave : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log ("OTHER!");
 		if (other.gameObject.tag == "baby") {
 			Destroy (other.gameObject);
 		}

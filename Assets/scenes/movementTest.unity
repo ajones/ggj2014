@@ -1721,6 +1721,8 @@ GameObject:
   - 114: {fileID: 1182603072}
   - 114: {fileID: 1182603071}
   - 114: {fileID: 1182603076}
+  - 50: {fileID: 1182603077}
+  - 61: {fileID: 1182603075}
   m_Layer: 0
   m_Name: BabyDuck1
   m_TagString: baby
@@ -1804,6 +1806,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1182603069}
   m_Mesh: {fileID: 0}
+--- !u!61 &1182603075
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1182603069}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .169999972, y: .150000006}
+  m_Center: {x: .105000004, y: .145000011}
 --- !u!114 &1182603076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1816,6 +1829,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
+--- !u!50 &1182603077
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1182603069}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1189348011
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,6 +2349,8 @@ GameObject:
   - 114: {fileID: 1474893497}
   - 114: {fileID: 1474893496}
   - 114: {fileID: 1474893501}
+  - 50: {fileID: 1474893502}
+  - 61: {fileID: 1474893500}
   m_Layer: 0
   m_Name: BabyDuck2
   m_TagString: baby
@@ -2404,6 +2434,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1474893494}
   m_Mesh: {fileID: 0}
+--- !u!61 &1474893500
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1474893494}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .169999972, y: .150000006}
+  m_Center: {x: .105000004, y: .145000011}
 --- !u!114 &1474893501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2416,6 +2457,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
+--- !u!50 &1474893502
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1474893494}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1486178325
 GameObject:
   m_ObjectHideFlags: 0
@@ -3460,6 +3516,8 @@ GameObject:
   - 114: {fileID: 1890424703}
   - 114: {fileID: 1890424702}
   - 114: {fileID: 1890424707}
+  - 50: {fileID: 1890424708}
+  - 61: {fileID: 1890424706}
   m_Layer: 0
   m_Name: BabyDuck3
   m_TagString: baby
@@ -3543,6 +3601,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1890424700}
   m_Mesh: {fileID: 0}
+--- !u!61 &1890424706
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890424700}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .169999972, y: .150000006}
+  m_Center: {x: .105000004, y: .144999892}
 --- !u!114 &1890424707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3555,6 +3624,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
+--- !u!50 &1890424708
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890424700}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1894035781
 GameObject:
   m_ObjectHideFlags: 0

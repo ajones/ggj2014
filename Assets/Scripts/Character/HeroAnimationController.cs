@@ -85,6 +85,7 @@ public class HeroAnimationController : MonoBehaviour {
 		if (theCollision.gameObject.tag == "lake") {
 			this.isFloating = false;
 			this.isWalking = true;
+			this.animator.Play ("walk");
 		}
 	}
 	

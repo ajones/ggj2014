@@ -15,7 +15,6 @@ public class BabiesController : MonoBehaviour,IEventListener {
 		case "BabyFedEvent":
 			Debug.Log ("Baby Fed Event");
 			this.AnimateBabyExit();
-			DialogManager.getInstance().ShowDialog("DuckDialog","I AM GOD!");
 			break;
 		}        
 		return false;

@@ -23,9 +23,7 @@ public class DialogManager : Manager {
 
 
 	public void ShowDialog(string dialogName, string message) {
-		if (currentlyVisibleDialog != null){
-			GameObject.Destroy(currentlyVisibleDialog.gameObject);
-		}
+		this.DismissDialog();
 
 		GameObject prefab = Resources.Load ("Prefabs/Dialogs/"+dialogName) as GameObject;
 		GameObject go = GameObject.Instantiate(prefab) as GameObject;
@@ -35,5 +33,13 @@ public class DialogManager : Manager {
 		currentlyVisibleDialog.SetMessage(message);
 
 	}
+
+	public void DismissDialog() {
+		if (currentlyVisibleDialog != null){
+			GameObject.Destroy(currentlyVisibleDialog.gameObject);
+		}
+	}
+
+	
 
 }

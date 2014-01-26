@@ -158,3 +158,16 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: HumanCharacter
+    spriteCollectionGUID: 1437857a3bad2476ab44593a1ae4ca7c
+    spriteCollectionDataGUID: d091a37e2337d4235b65b8f32c56671d
+    spriteNames:
+    - humanportrait
+    spriteTextureGUIDs:
+    - 966507651e6d94df6be110f9031e8b79
+    spriteTextureTimeStamps:
+    - 1390682056
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3

@@ -20,6 +20,8 @@ public class HeroInteractionTarget : InteractionTarget {
 				this.heroController.SetMovementInteractionEnabled(false);
 				EventManager.TriggerEvent(new DoorOpen());
 				StartCoroutine(WaitThenEnableInteraction());
+
+				ConversationManager.getInstance().PlayConversation1();
 			}
 			break;
 		case "item-drop":

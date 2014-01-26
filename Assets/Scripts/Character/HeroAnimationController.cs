@@ -10,7 +10,7 @@ public class HeroAnimationController : MonoBehaviour {
 	bool isGrounded = false;
 	bool isWaiting = false;
 	bool isFloating = false;
-	
+
 	float sitDelay = 1.0f;
 	
 	void Awake() {
@@ -19,11 +19,6 @@ public class HeroAnimationController : MonoBehaviour {
 	}
 	
 	void Update() {
-		Debug.Log ("isFlapping: " + isFlapping);
-		Debug.Log ("isWalking: " + isWalking);
-		Debug.Log ("isGrounded: " + isGrounded);
-		Debug.Log ("isWaiting: " + isWaiting);
-		Debug.Log ("isFloating: " + isFloating);
 		if (this.isFloating) {
 			this.animator.Play("float");
 		} else if (this.isGrounded){
@@ -72,6 +67,7 @@ public class HeroAnimationController : MonoBehaviour {
 		if (theCollision.gameObject.tag == "lake") {
 			this.isWalking = false;
 			this.isFlapping = false;
+			this.isWaiting = false;
 			this.isFloating = true;
 		}
 	}
@@ -80,6 +76,7 @@ public class HeroAnimationController : MonoBehaviour {
 		if (theCollision.gameObject.tag == "lake") {
 			this.isWalking = false;
 			this.isFlapping = false;
+			this.isWaiting = false;
 			this.isFloating = true;
 		}
 	}
@@ -87,9 +84,7 @@ public class HeroAnimationController : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D theCollision) {
 		if (theCollision.gameObject.tag == "lake") {
 			this.isFloating = false;
-			if (!this.isFlapping) {
-				this.isWalking = true;
-			}
+			this.isWalking = true;
 		}
 	}
 	

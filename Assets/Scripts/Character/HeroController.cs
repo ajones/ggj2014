@@ -68,6 +68,9 @@ public class HeroController : MonoBehaviour, IEventListener {
 	public void DropItem() {
 		if (this.capturedItem){
 			switch(this.capturedItem.gameObject.name){
+			case "bread":
+				return;
+				break;
 			case "phone":
 				ConversationManager.getInstance().PlayConversation2();
 				break;

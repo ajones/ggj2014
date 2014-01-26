@@ -72,21 +72,18 @@ public class ZoomController : MonoBehaviour, IEventListener {
 		float shakeSize = 3f;
 		float shakeStep = 0.1f;
 		float elapsedTime = 0f;
-		Vector3 startingPos = this.transform.localPosition;
 
 		while(elapsedTime < shakeTime){
 			this.transform.localPosition = new Vector3(
-				startingPos.x + ((Random.value * shakeSize) - shakeSize/2f),
-				startingPos.y + ((Random.value * shakeSize) - shakeSize/2f),
-				startingPos.z 
+				this.transform.localPosition.x + ((Random.value * shakeSize) - shakeSize/2f),
+				this.transform.localPosition.y + ((Random.value * shakeSize) - shakeSize/2f),
+				this.transform.localPosition.z 
 			);
 			
 			yield return new WaitForSeconds(shakeStep);
 
 			elapsedTime += shakeStep;
 		}
-
-		this.transform.localPosition = startingPos;
 	}
 }
 

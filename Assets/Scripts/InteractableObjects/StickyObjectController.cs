@@ -7,14 +7,22 @@ public class StickyObjectController : MonoBehaviour {
 			this.transform.parent = collision.gameObject.transform;
 			this.transform.localPosition = new Vector3(0.31f,0.41f,-1);
 			collision.gameObject.SendMessage("itemCaptured", this.gameObject);
+			this.itemGrabbed();
 		}
+	}
+
+	public virtual void itemGrabbed() {
 	}
 
 	void OnTriggerExit2D(Collider2D collider ) {
 		if(collider.gameObject.tag=="hero"){ 
 			this.collider2D.isTrigger = false;
 			this.gameObject.AddComponent<Rigidbody2D>();
+			this.itemDropped();
 		}
+	}
+
+	public virtual void itemDropped() {
 	}
 
 }

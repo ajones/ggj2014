@@ -1,15 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraInteractionTarget : InteractionTarget {
+public class GameManagerInteractionTarget : InteractionTarget {
 
 	public override void beginInteraction (string id) {
 		
-		EventManager.TriggerEvent(new LevelStart());
+		switch(id) {
+			case "babies":
+				EventManager.TriggerEvent(new GameStateProgressEvent(GameManager.GameState.FeedBabies));
+				break;
+		}
 	}
 	
 	public override void stopInteraction (string id) {
-		EventManager.TriggerEvent(new Segway());
+
 	}
 	
 	

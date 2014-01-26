@@ -14,9 +14,6 @@ public class GameManager : Manager, IEventListener {
 	};
 
 
-	public GameState gameState = GameState.Intro;
-
-
 	GameState[] steps = new GameState[2]{
 		GameState.FeedBabies,
 		GameState.ApproachDoor
@@ -70,6 +67,10 @@ public class GameManager : Manager, IEventListener {
 			this.currentStep ++;
 			Debug.Log("GAME STATE PROGRESS. now : " + this.steps[this.currentStep]);
 		}
+	}
+
+	public GameState getGameState() {
+		return this.steps[this.currentStep];
 	}
 
 }

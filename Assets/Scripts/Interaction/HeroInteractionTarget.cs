@@ -16,7 +16,9 @@ public class HeroInteractionTarget : InteractionTarget {
 			break;
 		
 		case "front-door":
-			this.heroController.SetMovementInteractionEnabled(false);
+			if (GameManager.getInstance().getGameState() == GameManager.GameState.ApproachDoor){
+				this.heroController.SetMovementInteractionEnabled(false);
+			}
 			break;
 		}
 	}

@@ -1,17 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Door/FadeController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menu/MenuController.cs">
     <Files>
       <File FileName="Assets/Scripts/DialogPopup/ConversationManager.cs" Line="56" Column="48" />
       <File FileName="Assets/Scripts/DialogPopup/DialogManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Character/MovementController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Character/MovementController.cs" Line="28" Column="4" />
       <File FileName="Assets/Scripts/Character/HeroController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Phone/Thrower.cs" Line="43" Column="1" />
-      <File FileName="Assets/Scripts/InteractableObjects/StickyObjectController.cs" Line="24" Column="3" />
-      <File FileName="Assets/Scripts/Interaction/CameraInteractionTarget.cs" Line="16" Column="24" />
-      <File FileName="Assets/Scripts/Door/FadeController.cs" Line="26" Column="42" />
+      <File FileName="Assets/Scripts/Phone/Thrower.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/InteractableObjects/StickyObjectController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Interaction/CameraInteractionTarget.cs" Line="1" Column="1" />
       <File FileName="Assets/TK2DROOT/tk2d/Code/Sprites/tk2dSprite.cs" Line="11" Column="36" />
-      <File FileName="Assets/TK2DROOT/tk2d/Code/Sprites/tk2dBaseSprite.cs" Line="102" Column="20" />
+      <File FileName="Assets/TK2DROOT/tk2d/Code/Sprites/tk2dBaseSprite.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Menu/MenuController.cs" Line="22" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

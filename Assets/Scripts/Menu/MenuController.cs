@@ -31,5 +31,12 @@ public class MenuController : MonoBehaviour {
 			accum += Time.deltaTime;
 			yield return new WaitForEndOfFrame();
 		}
+
+		foreach(TextMesh tm in meshes){
+			tm.color = new Color(tm.color.r,tm.color.g,tm.color.b,0); 
+			accum += Time.deltaTime;
+			yield return new WaitForEndOfFrame();	
+		}
+		bg.color = new Color(bg.color.r,bg.color.g,bg.color.b,0); 
 	}
 }

@@ -14,7 +14,12 @@ public class Leaver : MonoBehaviour {
 	}
 
 	public void Leave() {
-		sprite.FlipX = true;
+		if (this.gameObject.name == "hero"){
+			sprite.FlipX = false;
+		} else {
+			sprite.FlipX = true;
+		}
+
 		StartCoroutine ("ReallyLeave");
 	}
 

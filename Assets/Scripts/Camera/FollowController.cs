@@ -104,6 +104,7 @@ public class FollowController : MonoBehaviour,IEventListener {
 			yield return null;
 		}
 		this.shouldFollow = true;
+		newCamPosition = new Vector3 (camTransform.position.x, camTransform.position.y, camTransform.position.z);
 	}
 
 	bool IEventListener.HandleEvent(IEvent evt) {

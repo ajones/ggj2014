@@ -29,8 +29,6 @@ public class HeroAnimationController : MonoBehaviour {
 	}
 	
 	void Update() {
-		// Debug.Log ("AM I ON A WALL?: " + this.isOnLeftWall + " : " + this.isOnRightWall);
-		// Debug.Log ("Current state is " + currentState + " || isInLake : " + this.isInLake + " || isGrounded : " + this.isGrounded);
 		if (this.isGrounded) {
 			if (currentState == State.FLAPPING) {
 				currentState = State.WAITING;

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MovementController : MonoBehaviour {
 
-	public bool interactionEnabled = true;
+	public bool interactionEnabled = false;
 
 	float movementSpeed = 5000f;
 	float jumpSpeed = 100000f;
@@ -12,6 +12,7 @@ public class MovementController : MonoBehaviour {
 	HeroController heroController;
 
 	void Awake() {
+		this.interactionEnabled = false;
 		this.sprite = this.gameObject.GetComponent<tk2dSprite>();
 		this.heroController = this.gameObject.GetComponent<HeroController>();
 	}

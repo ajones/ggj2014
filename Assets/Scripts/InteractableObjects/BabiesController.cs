@@ -22,9 +22,10 @@ public class BabiesController : MonoBehaviour,IEventListener {
 
 	void AnimateBabyExit() {
 		GameObject baby = this.babies[0];
-		this.babies.RemoveAt(0);
 
-		GameObject.Destroy(baby);
+		Leaver babyLeaver = baby.GetComponent<Leaver> ();
+		babyLeaver.Leave ();
+		this.babies.RemoveAt (0);
 	}
 
 }

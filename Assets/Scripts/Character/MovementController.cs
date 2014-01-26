@@ -51,4 +51,8 @@ public class MovementController : MonoBehaviour {
 			this.heroController.capturedItem.transform.localPosition = pos;
 		}
 	}
+
+	public void SetUpCapturedItem() {
+		this.flipItemPosition(this.sprite.FlipX);
+	}
 }

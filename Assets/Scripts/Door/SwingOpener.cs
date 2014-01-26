@@ -38,6 +38,7 @@ public class SwingOpener : MonoBehaviour, IEventListener {
 	bool IEventListener.HandleEvent(IEvent evt) {
 		switch (evt.GetName()) {
 		case "DoorOpen":
+			Debug.Log("Swing open");
 			StartCoroutine("SwingOpen");
 			break;
 		}        

@@ -15,6 +15,7 @@ public class HeroController : MonoBehaviour {
 	void itemCaptured (GameObject item) {
 		this.capturedItem = item;
 		GameObject.Destroy(this.capturedItem.rigidbody2D);
+		this.movementController.SetUpCapturedItem();
 	}
 
 	void Update () {

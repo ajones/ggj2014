@@ -83,7 +83,6 @@ public class HeroAnimationController : MonoBehaviour {
 	
 	void OnTriggerExit2D(Collider2D theCollision) {
 		if (theCollision.gameObject.tag == "lake") {
-			Debug.Log ("Leaving lake!");
 			this.isFloating = false;
 			this.isWalking = true;
 		}

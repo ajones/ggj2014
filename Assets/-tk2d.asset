@@ -38,6 +38,7 @@ MonoBehaviour:
     - Z-0
     - Z-4
     - Z-2
+    - house
     spriteTextureGUIDs:
     - 
     - 0a55ab9c324bc4599bf1013bcca87f4b
@@ -46,6 +47,7 @@ MonoBehaviour:
     - 93a18208a75684f48a8b08705ea7b6ff
     - 9644f5885622d435eba256219a013341
     - fa789a9a3f8534ddbb82e3851e8d0584
+    - 03a9d5e05bcb040d7b538448afbaba50
     spriteTextureTimeStamps:
     - 0
     - 1390687001
@@ -54,6 +56,7 @@ MonoBehaviour:
     - 1390687146
     - 1390687071
     - 1390687021
+    - 1390674794
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -138,8 +141,21 @@ MonoBehaviour:
     - 1a50093777457465083344f097cd0561
     - eefa6b7aba74a4c0d89f8575ec09cb62
     spriteTextureTimeStamps:
-    - 1390673126
-    - 1390673126
+    - 1390673151
+    - 1390673151
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: HumanCharacter
+    spriteCollectionGUID: 1437857a3bad2476ab44593a1ae4ca7c
+    spriteCollectionDataGUID: d091a37e2337d4235b65b8f32c56671d
+    spriteNames:
+    - humanportrait
+    spriteTextureGUIDs:
+    - 966507651e6d94df6be110f9031e8b79
+    spriteTextureTimeStamps:
+    - 1390687062
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -158,10 +174,10 @@ MonoBehaviour:
     - afc347bde3b9e46f48b7c307132dde07
     - 274da9a16dac945d4b66d380bee193b9
     spriteTextureTimeStamps:
-    - 1390673126
-    - 1390673126
-    - 1390669347
-    - 1390682855
+    - 1390673151
+    - 1390673151
+    - 1390681678
+    - 1390687062
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -174,7 +190,7 @@ MonoBehaviour:
     spriteTextureGUIDs:
     - 3584237fbb238498bb6d646a19ba9c1c
     spriteTextureTimeStamps:
-    - 1390610081
+    - 1390645224
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -182,12 +198,85 @@ MonoBehaviour:
   - name: HumanCharacter
     spriteCollectionGUID: 1437857a3bad2476ab44593a1ae4ca7c
     spriteCollectionDataGUID: d091a37e2337d4235b65b8f32c56671d
+  - name: 
+    spriteCollectionGUID: 
+    spriteCollectionDataGUID: 9bf56c943f5264d48bbcb8cdc2a8069b
+    spriteNames: []
+    spriteTextureGUIDs: []
+    spriteTextureTimeStamps: []
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 0
+  - name: DuckCharacter
+    spriteCollectionGUID: 6bbdafc5f7937492381fac3223b85a66
+    spriteCollectionDataGUID: d355a1a4b242348788d271b15d95e890
     spriteNames:
     - humanportrait
+    - duck
+    - duckFlap
+    - sword
+    - duckWaddle0
+    - duckStand
+    - duckSit0
+    - duckWaddle1
+    - duckSit1
+    - duckGrab3
+    - duckGrab2
+    - duckGrab1
+    - duckGrab0
+    - babyDuckYammer0
+    - babyDuckYammer1
+    - bread1
+    - bread0
+    - bread2
+    - duckFloat0
+    - duckFloat1
+    - duckportrait
     spriteTextureGUIDs:
     - 966507651e6d94df6be110f9031e8b79
+    - cb72510bb97504d3fbefd5f65d00c219
+    - d5d0ecf5a1b1e4b70a4a3384947b0287
+    - f89195319b03847358c796ec9ff94bc5
+    - 1b465f53e16684000ac9ba30a39d84ce
+    - 41da033b6a4d34d30b8b3b0423d8b2f3
+    - 46be2e5b214444ec7814ab862cc0b3bc
+    - dc614b7674014453f8403616896c2781
+    - ecb7b01c51d524ce2a704e5dd46c3827
+    - 501c73589c8a546ab8d76102ac281bfc
+    - 652f6952b63be45fcb65b00ced8feb7e
+    - d0ad906c9a6414cf792150f596714a3a
+    - ea2dd7fa313f144fd94c4d0c39b33397
+    - 0ef95c72731414ba7963311e250d33c8
+    - 550b1819156454bd8aaa167e80592a6f
+    - 907b103ebe6414413919a19ab643026d
+    - 90bb798959b074b918642bf64a51d5ab
+    - b15552a0c94f84cb2b785d6f3984384b
+    - b39a8c87a142d4d9aafc67bb7f1190ec
+    - 8e5c36df3e2c9449c909bd941837a36d
+    - d7a5e66cbbe7a47ffa43b2a4c46b0b82
     spriteTextureTimeStamps:
     - 1390682056
+    - 1390598152
+    - 1390645224
+    - 1390645224
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390674794
+    - 1390674794
+    - 1390674794
+    - 1390674794
+    - 1390674794
+    - 1390679846
+    - 1390679846
+    - 1390687062
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

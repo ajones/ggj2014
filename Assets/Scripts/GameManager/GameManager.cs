@@ -58,6 +58,15 @@ public class GameManager : Manager, IEventListener {
 
 	void CheckProgress(GameState stateProgress){
 		if (this.steps[this.currentStep] == stateProgress){
+
+			switch(stateProgress){
+				case GameState.FeedBabies :
+					EventManager.TriggerEvent(new BabyFedEvent());
+					break;
+			}
+
+
+
 			this.currentStep ++;
 			Debug.Log("GAME STATE PROGRESS. now : " + this.steps[this.currentStep]);
 		}

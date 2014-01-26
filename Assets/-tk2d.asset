@@ -17,6 +17,10 @@ MonoBehaviour:
     dataGUID: 
     managed: 0
     loadable: 0
+  - assetGUID: f1d37c4268e3b45aebd06e963ff86cf8
+    dataGUID: 
+    managed: 0
+    loadable: 0
   fontIndex: []
   spriteCollectionIndex:
   - name: Popups
@@ -48,6 +52,11 @@ MonoBehaviour:
     - duckGrab2
     - duckGrab1
     - duckGrab0
+    - babyDuckYammer0
+    - babyDuckYammer1
+    - bread1
+    - bread0
+    - bread2
     spriteTextureGUIDs:
     - cb72510bb97504d3fbefd5f65d00c219
     - d5d0ecf5a1b1e4b70a4a3384947b0287
@@ -61,19 +70,29 @@ MonoBehaviour:
     - 652f6952b63be45fcb65b00ced8feb7e
     - d0ad906c9a6414cf792150f596714a3a
     - ea2dd7fa313f144fd94c4d0c39b33397
+    - 0ef95c72731414ba7963311e250d33c8
+    - 550b1819156454bd8aaa167e80592a6f
+    - 907b103ebe6414413919a19ab643026d
+    - 90bb798959b074b918642bf64a51d5ab
+    - b15552a0c94f84cb2b785d6f3984384b
     spriteTextureTimeStamps:
     - 1390595199
     - 1390647363
     - 1390608490
-    - 1390651307
-    - 1390647327
-    - 1390645856
-    - 1390651316
-    - 1390645871
-    - 1390650815
-    - 1390650805
-    - 1390650795
-    - 1390650782
+    - 1390651986
+    - 1390651986
+    - 1390651986
+    - 1390651986
+    - 1390651986
+    - 1390651986
+    - 1390651986
+    - 1390651986
+    - 1390651986
+    - 1390666580
+    - 1390666645
+    - 1390664827
+    - 1390664795
+    - 1390664870
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

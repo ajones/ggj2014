@@ -4,7 +4,6 @@ using System.Collections;
 public class BabiesInteractionArea : InteractionArea {
 	
 	public override void beginInteraction() {
-		Debug.Log ("beginInteraction");
 		this.interactionTarget.beginInteraction("babies");
 	}
 

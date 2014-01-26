@@ -35,11 +35,85 @@ MonoBehaviour:
     spriteTextureGUIDs:
     - 03a9d5e05bcb040d7b538448afbaba50
     spriteTextureTimeStamps:
-    - 1390673126
+    - 1390674794
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
     version: 3
+  - name: DuckMallard
+    spriteCollectionGUID: 7e495120fb32c4c44bc175b271b864ae
+    spriteCollectionDataGUID: 1eff3ca590e9b43b89a04f517818f2ff
+    spriteNames:
+    - mallardFloat0
+    - mallardFloat1
+    spriteTextureGUIDs:
+    - 1a50093777457465083344f097cd0561
+    - eefa6b7aba74a4c0d89f8575ec09cb62
+    spriteTextureTimeStamps:
+    - 1390673151
+    - 1390673151
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: HumanCharacter
+    spriteCollectionGUID: 1437857a3bad2476ab44593a1ae4ca7c
+    spriteCollectionDataGUID: d091a37e2337d4235b65b8f32c56671d
+    spriteNames:
+    - humanportrait
+    spriteTextureGUIDs:
+    - 966507651e6d94df6be110f9031e8b79
+    spriteTextureTimeStamps:
+    - 1390687062
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: Items
+    spriteCollectionGUID: f1fedb3482ffb44818137a1fe85d5694
+    spriteCollectionDataGUID: b2b663419b69e4640b67350c5037f33a
+    spriteNames:
+    - phone0
+    - phone1
+    - flower
+    - breadBook
+    spriteTextureGUIDs:
+    - 20830289e7ef144e483c55b48b4c83e7
+    - 8ee487ed397d742efb30d5c10b3562ac
+    - afc347bde3b9e46f48b7c307132dde07
+    - 274da9a16dac945d4b66d380bee193b9
+    spriteTextureTimeStamps:
+    - 1390673151
+    - 1390673151
+    - 1390681678
+    - 1390687062
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: Popups
+    spriteCollectionGUID: 68530048a56ea4d6e976298298f86267
+    spriteCollectionDataGUID: de669a5f44ea7456a976501ab55c9268
+    spriteNames:
+    - whitePixel
+    spriteTextureGUIDs:
+    - 3584237fbb238498bb6d646a19ba9c1c
+    spriteTextureTimeStamps:
+    - 1390645224
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: 
+    spriteCollectionGUID: 
+    spriteCollectionDataGUID: 9bf56c943f5264d48bbcb8cdc2a8069b
+    spriteNames: []
+    spriteTextureGUIDs: []
+    spriteTextureTimeStamps: []
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 0
   - name: DuckCharacter
     spriteCollectionGUID: 6bbdafc5f7937492381fac3223b85a66
     spriteCollectionDataGUID: d355a1a4b242348788d271b15d95e890
@@ -86,90 +160,26 @@ MonoBehaviour:
     - 8e5c36df3e2c9449c909bd941837a36d
     - d7a5e66cbbe7a47ffa43b2a4c46b0b82
     spriteTextureTimeStamps:
-    - 1390595199
-    - 1390647363
-    - 1390608490
-    - 1390651986
-    - 1390651986
-    - 1390651986
-    - 1390651986
-    - 1390651986
-    - 1390651986
-    - 1390651986
-    - 1390651986
-    - 1390651986
-    - 1390673126
-    - 1390673126
-    - 1390673126
-    - 1390673126
-    - 1390673126
-    - 1390681436
-    - 1390681436
-    - 1390682034
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 3
-  - name: DuckMallard
-    spriteCollectionGUID: 7e495120fb32c4c44bc175b271b864ae
-    spriteCollectionDataGUID: 1eff3ca590e9b43b89a04f517818f2ff
-    spriteNames:
-    - mallardFloat0
-    - mallardFloat1
-    spriteTextureGUIDs:
-    - 1a50093777457465083344f097cd0561
-    - eefa6b7aba74a4c0d89f8575ec09cb62
-    spriteTextureTimeStamps:
-    - 1390673126
-    - 1390673126
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 3
-  - name: Items
-    spriteCollectionGUID: f1fedb3482ffb44818137a1fe85d5694
-    spriteCollectionDataGUID: b2b663419b69e4640b67350c5037f33a
-    spriteNames:
-    - phone0
-    - phone1
-    - flower
-    - breadBook
-    spriteTextureGUIDs:
-    - 20830289e7ef144e483c55b48b4c83e7
-    - 8ee487ed397d742efb30d5c10b3562ac
-    - afc347bde3b9e46f48b7c307132dde07
-    - 274da9a16dac945d4b66d380bee193b9
-    spriteTextureTimeStamps:
-    - 1390673126
-    - 1390673126
-    - 1390669347
-    - 1390682855
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 3
-  - name: Popups
-    spriteCollectionGUID: 68530048a56ea4d6e976298298f86267
-    spriteCollectionDataGUID: de669a5f44ea7456a976501ab55c9268
-    spriteNames:
-    - whitePixel
-    spriteTextureGUIDs:
-    - 3584237fbb238498bb6d646a19ba9c1c
-    spriteTextureTimeStamps:
-    - 1390610081
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 3
-  - name: HumanCharacter
-    spriteCollectionGUID: 1437857a3bad2476ab44593a1ae4ca7c
-    spriteCollectionDataGUID: d091a37e2337d4235b65b8f32c56671d
-    spriteNames:
-    - humanportrait
-    spriteTextureGUIDs:
-    - 966507651e6d94df6be110f9031e8b79
-    spriteTextureTimeStamps:
-    - 1390682056
+    - 1390598152
+    - 1390645224
+    - 1390645224
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390652183
+    - 1390674794
+    - 1390674794
+    - 1390674794
+    - 1390674794
+    - 1390674794
+    - 1390679846
+    - 1390679846
+    - 1390687062
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

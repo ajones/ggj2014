@@ -3407,8 +3407,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 20043972}
-  xGive: 0
+  xGive: 2
   yGive: 0
+  minPoint: {x: -100, y: -500}
+  maxPoint: {x: 600, y: 384}
 --- !u!114 &1274547449
 MonoBehaviour:
   m_ObjectHideFlags: 0

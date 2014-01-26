@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HeroController : MonoBehaviour {
+public class HeroController : MonoBehaviour, IEventListener {
 
 	public GameObject capturedItem = null;
 	GameObject popUp = null;
 	MovementController movementController;
 
 	void Awake () {
+		EventManager.AddListener(this,"GameOverEvent");
 		this.movementController = this.GetComponent<MovementController>();
 	}
 
@@ -89,5 +90,15 @@ public class HeroController : MonoBehaviour {
 		}
 	}
 
+
+	bool IEventListener.HandleEvent(IEvent evt) {
+		switch (evt.GetName()) {
+		case "GameOverEvent":
+			this.gameObject.AddComponent<Leaver>().Leave();
+			this.movementController.interactionEnabled = false;
+			break;
+		}        
+		return false;
+	}
 }
 

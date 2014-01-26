@@ -1679,7 +1679,6 @@ GameObject:
   - 23: {fileID: 1196753735}
   - 33: {fileID: 1196753734}
   - 114: {fileID: 1196753733}
-  - 114: {fileID: 1196753736}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -1749,21 +1748,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!114 &1196753736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1196753731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1731ae3d08dc54006abf2fd0a4b0bb92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  phoneShaker: {fileID: 0}
-  origin: {x: 0, y: 0, z: 0}
-  force: {x: 0, y: 0}
-  phoneCallDelay: 0
 --- !u!1 &1274547441
 GameObject:
   m_ObjectHideFlags: 0

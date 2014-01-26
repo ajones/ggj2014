@@ -40,6 +40,7 @@ public class GameManager : Manager, IEventListener {
 
 	void Awake() {
 		EventManager.AddListener(this, "GameStateProgressEvent");
+		Screen.showCursor = false;
 	}
 
 

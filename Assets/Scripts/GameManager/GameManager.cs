@@ -12,13 +12,14 @@ public class GameManager : Manager, IEventListener {
 	};
 
 
-	GameState[] steps = new GameState[7]{
+	GameState[] steps = new GameState[8]{
 		GameState.FeedBabies,
 		GameState.ApproachDoor,
 		GameState.ItemDrop,
 		GameState.ItemDrop,
 		GameState.ItemDrop,
 		GameState.ItemDrop,
+		GameState.FeedBabies,
 		GameState.GameOver
 	};
 

@@ -12,6 +12,7 @@ public class ZoomController : MonoBehaviour, IEventListener {
 
 	void Awake() {
 		EventManager.AddListener(this, "LevelStart");
+		EventManager.AddListener(this, "GameStartEvent");
 		EventManager.AddListener(this, "Segway");
 		EventManager.AddListener(this, "CameraShakeEvent");
 	}
@@ -32,6 +33,7 @@ public class ZoomController : MonoBehaviour, IEventListener {
 			StartCoroutine("ZoomIn");
 			break;
 		case "Segway":
+		case "GameStartEvent":
 			StartCoroutine("ZoomOut");
 			print ("zoom out");
 			break;
@@ -60,7 +62,7 @@ public class ZoomController : MonoBehaviour, IEventListener {
 		float originalSize = cam.orthographicSize;
 		float diffInSize = outSize - originalSize ;
 		float currentDiff = 0;
-		while (cam.orthographicSize < outSize) {
+		while (cam.orthographicSize != outSize) {
 			currentDiff = Mathf.Lerp (currentDiff, diffInSize, moveSpeed * Time.deltaTime);
 			cam.orthographicSize = originalSize + currentDiff;
 			yield return new WaitForEndOfFrame();

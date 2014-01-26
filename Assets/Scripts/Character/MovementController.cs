@@ -29,14 +29,24 @@ public class MovementController : MonoBehaviour {
 		}
 		if (Input.GetKey ("right") || Input.GetKey ("d")){
 			this.heroController.destroyPopupIfNecessary();
-			this.rigidbody2D.AddForce(new Vector3(movementSpeed,0,0));
+			if (!this.gameObject.GetComponent<HeroAnimationController>().isOnRightWall) {
+				if (this.gameObject.GetComponent<HeroAnimationController>().isOnLeftWall) {
+					this.gameObject.GetComponent<HeroAnimationController>().isOnLeftWall = false;
+				}
+				this.rigidbody2D.AddForce(new Vector3(movementSpeed,0,0));
+			}
 
 			this.sprite.FlipX = false;
 			this.flipItemPosition(this.sprite.FlipX);
 		}
 		if (Input.GetKey ("left") || Input.GetKey ("a")){
 			this.heroController.destroyPopupIfNecessary();
-			this.rigidbody2D.AddForce(new Vector3(movementSpeed * -1,0,0));
+			if (!this.gameObject.GetComponent<HeroAnimationController>().isOnLeftWall) {
+				if (this.gameObject.GetComponent<HeroAnimationController>().isOnRightWall) {
+					this.gameObject.GetComponent<HeroAnimationController>().isOnRightWall = false;
+				}
+				this.rigidbody2D.AddForce(new Vector3(movementSpeed * -1,0,0));
+			}
 			this.sprite.FlipX = true;
 			this.flipItemPosition(this.sprite.FlipX);
 		}

@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FollowController : MonoBehaviour {
-
+public class FollowController : MonoBehaviour,IEventListener {
+	
 	public GameObject target;
+	public GameObject startTarget;
 	public float xGive;
 	public float yGive;
 	public Vector2 minPoint;
@@ -15,17 +16,22 @@ public class FollowController : MonoBehaviour {
 	private Transform targetTransform;
 	private Vector3 newCamPosition;
 
+	bool shouldFollow = false;
+
 	// Use this for initialization
 	void Start () {
+		EventManager.AddListener(this,"GameStartEvent");
 		cam = Camera.main;
 		camTransform = Camera.main.transform;
-		targetTransform = target.transform;
+		targetTransform = startTarget.transform;
 		newCamPosition = new Vector3(targetTransform.position.x, targetTransform.position.y, camTransform.position.z);
 		camTransform.position = newCamPosition;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (!shouldFollow) return;
+
 		float xDiff;
 		float yDiff;
 
@@ -73,6 +79,16 @@ public class FollowController : MonoBehaviour {
 			camTransform.position = newCamPosition;
 		}
 		
+	}
+
+	bool IEventListener.HandleEvent(IEvent evt) {
+		switch (evt.GetName()) {
+		case "GameStartEvent":
+			targetTransform = target.transform;
+			this.shouldFollow = true;
+			break;
+		}        
+		return false;
 	}
 	
 }

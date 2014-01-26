@@ -9,7 +9,7 @@ public class Leaver : MonoBehaviour {
 	
 	private tk2dSprite sprite;
 
-	void Start() {
+	void Awake() {
 		sprite = GetComponent<tk2dSprite> ();
 	}
 

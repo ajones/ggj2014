@@ -96,7 +96,10 @@ public class HeroController : MonoBehaviour, IEventListener {
 	bool IEventListener.HandleEvent(IEvent evt) {
 		switch (evt.GetName()) {
 		case "GameOverEvent":
-			this.gameObject.AddComponent<Leaver>().Leave();
+			this.rigidbody2D.isKinematic = true;
+			Leaver l = this.gameObject.AddComponent<Leaver>();
+			l.speed = 15;
+			l.Leave();
 			SetMovementInteractionEnabled(false);
 			break;
 		case "GameStartEvent":

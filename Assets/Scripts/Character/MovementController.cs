@@ -50,6 +50,10 @@ public class MovementController : MonoBehaviour {
 			this.sprite.FlipX = true;
 			this.flipItemPosition(this.sprite.FlipX);
 		}
+		if (Input.GetKey(KeyCode.Escape)) {
+			Debug.Log ("quitting!");
+			Application.Quit();
+		}
 	}
 
 

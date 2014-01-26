@@ -18,6 +18,8 @@ public class HeroAnimationController : MonoBehaviour {
 	bool isGrounded = false;
 	bool isInLake = false;
 	bool isSitting = false;
+	public bool isOnRightWall = false;
+	public bool isOnLeftWall = false;
 
 	float sitDelay = 1.0f;
 	
@@ -27,7 +29,8 @@ public class HeroAnimationController : MonoBehaviour {
 	}
 	
 	void Update() {
-		Debug.Log ("Current state is " + currentState + " || isInLake : " + this.isInLake + " || isGrounded : " + this.isGrounded);
+		// Debug.Log ("AM I ON A WALL?: " + this.isOnLeftWall + " : " + this.isOnRightWall);
+		// Debug.Log ("Current state is " + currentState + " || isInLake : " + this.isInLake + " || isGrounded : " + this.isGrounded);
 		if (this.isGrounded) {
 			if (currentState == State.FLAPPING) {
 				currentState = State.WAITING;
@@ -90,19 +93,38 @@ public class HeroAnimationController : MonoBehaviour {
 		if(theCollision.gameObject.tag == "floor") {
 			this.isGrounded = true;
 			this.isInLake = false;
+		} else if (theCollision.gameObject.tag == "rightWall") {
+			this.isOnRightWall = true;
+			this.isOnLeftWall = false;
+		} else if (theCollision.gameObject.tag == "leftWall") {
+			this.isOnLeftWall = true;
+			this.isOnRightWall = false;
 		}
 	}
 	
 	void OnCollisionExit2D(Collision2D theCollision){ 
 		if(theCollision.gameObject.tag == "floor") {
 			this.isGrounded = false;
+		} else if (theCollision.gameObject.tag == "rightWall") {
+			this.isOnRightWall = false;
+			this.isOnLeftWall = false;
+		} else if (theCollision.gameObject.tag == "leftWall") {
+			this.isOnLeftWall = false;
+			this.isOnRightWall = false;
 		}
 	}
 	
 	void OnCollisionStay2D(Collision2D theCollision) {
+		//Debug.Log ("colliding with " + theCollision.gameObject.tag); 
 		if(theCollision.gameObject.tag == "floor") {
 			this.isGrounded = true;
 			this.isInLake = false;
+		} else if (theCollision.gameObject.tag == "rightWall") {
+			this.isOnRightWall = true;
+			this.isOnLeftWall = false;
+		} else if (theCollision.gameObject.tag == "leftWall") {
+			this.isOnLeftWall = true;
+			this.isOnRightWall = false;
 		}
 	}
 	

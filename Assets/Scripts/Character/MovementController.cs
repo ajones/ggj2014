@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MovementController : MonoBehaviour {
 
+	public bool interactionEnabled = true;
+
 	float movementSpeed = 5000f;
 	float jumpSpeed = 100000f;
 	
@@ -17,6 +19,9 @@ public class MovementController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		if (!interactionEnabled) return;
+
 		if (Input.GetKeyDown ("up") || Input.GetKey ("w")){
 			this.heroController.destroyPopupIfNecessary();
 			this.rigidbody2D.AddForce(new Vector3(0,jumpSpeed,0));

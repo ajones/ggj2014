@@ -42,77 +42,36 @@ MonoBehaviour:
   materialIdsValid: 1
   needMaterialInstance: 0
   spriteDefinitions:
-  - name: 
+  - name: house
     boundsData:
-    - {x: .310000002, y: -.310000002, z: 0}
-    - {x: .639999986, y: .639999986, z: 0}
+    - {x: .00500011444, y: 0, z: 0}
+    - {x: 13.9499998, y: 11.6199999, z: 0}
     untrimmedBoundsData:
-    - {x: .310000002, y: -.310000002, z: 0}
-    - {x: .639999986, y: .639999986, z: 0}
+    - {x: .00500011444, y: 0, z: 0}
+    - {x: 13.9499998, y: 11.6199999, z: 0}
     texelSize: {x: .00999999978, y: .00999999978}
     positions:
-    - {x: -.00999999978, y: -.629999995, z: 0}
-    - {x: .629999995, y: -.629999995, z: 0}
-    - {x: -.00999999978, y: .00999999046, z: 0}
-    - {x: .629999995, y: .00999999046, z: 0}
+    - {x: -6.96999979, y: -5.80999994, z: 0}
+    - {x: 6.98000002, y: -5.80999994, z: 0}
+    - {x: -6.96999979, y: 5.80999994, z: 0}
+    - {x: 6.98000002, y: 5.80999994, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .706055164, y: .000488525373}
-    - {x: .707030773, y: .000488525373}
-    - {x: .706055164, y: .000976318377}
-    - {x: .707030773, y: .000976318377}
+    - {x: .000977050746, y: .000977050746}
+    - {x: .682128429, y: .000977050746}
+    - {x: .000977050746, y: .568358898}
+    - {x: .682128429, y: .568358898}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 4a6a05b6a3d4d4b88b280795223abfa1, type: 2}
     materialId: 0
-    sourceTextureGUID: 
+    sourceTextureGUID: 03a9d5e05bcb040d7b538448afbaba50
     extractRegion: 0
     regionX: 0
     regionY: 0
     regionW: 0
     regionH: 0
     flipped: 0
-    complexGeometry: 0
-    physicsEngine: 0
-    colliderType: 0
-    colliderVertices: []
-    colliderIndicesFwd: 
-    colliderIndicesBack: 
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
-    attachPoints: []
-  - name: house_concept_flat2
-    boundsData:
-    - {x: 0, y: 0, z: 0}
-    - {x: 25.5999985, y: 14.3999996, z: 0}
-    untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
-    - {x: 25.5999985, y: 14.3999996, z: 0}
-    texelSize: {x: .00999999978, y: .00999999978}
-    positions:
-    - {x: -12.7999992, y: -7.19999981, z: 0}
-    - {x: 12.7999992, y: -7.19999981, z: 0}
-    - {x: -12.7999992, y: 7.19999981, z: 0}
-    - {x: 12.7999992, y: 7.19999981, z: 0}
-    normals: []
-    tangents: []
-    uvs:
-    - {x: .000977050746, y: .000488525373}
-    - {x: .000977050746, y: .625488043}
-    - {x: .704101086, y: .000488525373}
-    - {x: .704101086, y: .625488043}
-    indices: 000000000300000001000000020000000300000000000000
-    material: {fileID: 2100000, guid: 4a6a05b6a3d4d4b88b280795223abfa1, type: 2}
-    materialId: 0
-    sourceTextureGUID: f0b623d59e7be4081a96e07fe7538588
-    extractRegion: 0
-    regionX: 0
-    regionY: 0
-    regionW: 0
-    regionH: 0
-    flipped: 1
     complexGeometry: 0
     physicsEngine: 0
     colliderType: 0
@@ -141,7 +100,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 50
-  buildKey: 162068133
+  buildKey: 1431884248
   dataGuid: d7364f4f96c334cda9079cf2172d6e13
   managedSpriteCollection: 0
   hasPlatformData: 0

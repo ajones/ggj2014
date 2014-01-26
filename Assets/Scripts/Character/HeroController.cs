@@ -5,6 +5,11 @@ public class HeroController : MonoBehaviour {
 
 	public GameObject capturedItem = null;
 	GameObject popUp = null;
+	MovementController movementController;
+
+	void Awake () {
+		this.movementController = this.GetComponent<MovementController>();
+	}
 
 
 	void itemCaptured (GameObject item) {
@@ -47,6 +52,10 @@ public class HeroController : MonoBehaviour {
 			this.capturedItem = null;
 			EventManager.TriggerEvent(new GameStateProgressEvent(GameManager.GameState.FeedBabies));
 		}
+	}
+
+	public void SetMovementInteractionEnabled(bool enabled) {
+		this.movementController.interactionEnabled = enabled;
 	}
 
 }

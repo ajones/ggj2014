@@ -11,9 +11,13 @@ public class HeroInteractionTarget : InteractionTarget {
 	public override void beginInteraction (string id) {
 		
 		switch(id) {
-			case "babies":
+		case "babies":
 			this.heroController.TryToFeedBabies();
-				break;
+			break;
+		
+		case "front-door":
+			this.heroController.SetMovementInteractionEnabled(false);
+			break;
 		}
 	}
 	

@@ -65,11 +65,16 @@ public class GameManager : Manager, IEventListener {
 				break;
 			}
 
-
-
-
 			this.currentStep ++;
 			Debug.Log("GAME STATE PROGRESS. now : " + this.steps[this.currentStep]);
+
+			CheckGameOver();
+		}
+	}
+
+	void CheckGameOver() {
+		if (this.steps[this.currentStep] == GameState.GameOver){
+			EventManager.TriggerEvent(new GameOverEvent());
 		}
 	}
 

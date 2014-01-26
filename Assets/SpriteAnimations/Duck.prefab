@@ -149,7 +149,7 @@ MonoBehaviour:
       eventFloat: 0
     fps: 10
     loopStart: 0
-    wrapMode: 0
+    wrapMode: 2
   - name: sitUp
     frames:
     - spriteCollection: {fileID: 11400000, guid: 825390633747143d3a613acde51cc398,
@@ -168,7 +168,7 @@ MonoBehaviour:
       eventFloat: 0
     fps: 30
     loopStart: 0
-    wrapMode: 0
+    wrapMode: 2
   - name: stand
     frames:
     - spriteCollection: {fileID: 11400000, guid: 825390633747143d3a613acde51cc398,

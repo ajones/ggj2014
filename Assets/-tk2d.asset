@@ -61,6 +61,9 @@ MonoBehaviour:
     - bread1
     - bread0
     - bread2
+    - duckFloat0
+    - duckFloat1
+    - duckportrait
     spriteTextureGUIDs:
     - cb72510bb97504d3fbefd5f65d00c219
     - d5d0ecf5a1b1e4b70a4a3384947b0287
@@ -79,6 +82,9 @@ MonoBehaviour:
     - 907b103ebe6414413919a19ab643026d
     - 90bb798959b074b918642bf64a51d5ab
     - b15552a0c94f84cb2b785d6f3984384b
+    - b39a8c87a142d4d9aafc67bb7f1190ec
+    - 8e5c36df3e2c9449c909bd941837a36d
+    - d7a5e66cbbe7a47ffa43b2a4c46b0b82
     spriteTextureTimeStamps:
     - 1390595199
     - 1390647363
@@ -97,6 +103,9 @@ MonoBehaviour:
     - 1390673126
     - 1390673126
     - 1390673126
+    - 1390681436
+    - 1390681436
+    - 1390682034
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

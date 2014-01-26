@@ -8,6 +8,7 @@ public class SwingOpener : MonoBehaviour, IEventListener {
 
 	private Transform myTransform;
 	private Quaternion newRotation;
+	private AudioSource audio;
 
 	void Awake() {
 		EventManager.AddListener(this, "DoorOpen");
@@ -15,6 +16,7 @@ public class SwingOpener : MonoBehaviour, IEventListener {
 
 	// Use this for initialization
 	void Start () {
+		audio = GetComponent<AudioSource> ();
 		myTransform = transform;
 	}
 	
@@ -24,6 +26,7 @@ public class SwingOpener : MonoBehaviour, IEventListener {
 	}
 
 	IEnumerator SwingOpen() {
+		audio.Play ();
 		while (myTransform.rotation.y > 0) {
 			float newY = myTransform.rotation.y - speed * Time.deltaTime;
 			newRotation = new Quaternion(myTransform.rotation.x, newY, myTransform.rotation.z, myTransform.rotation.w);

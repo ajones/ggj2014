@@ -60,12 +60,14 @@ public class HeroAnimationController : MonoBehaviour {
 				currentState = State.FLAPPING;
 			}
 		}
-		
+
 
 	}
 
 	void OnTriggerEnter2D(Collider2D theCollision) {
 		if (theCollision.gameObject.tag.Equals("lake")) {
+			int sound = Random.Range (0, 2);
+			SoundManager.getInstance().playSoundEffect("splash" + sound);
 			this.isInLake = true;
 			this.isGrounded = false;
 		}

@@ -5,6 +5,7 @@ TagManager:
   tags:
   - hero
   - floor
+  - lake
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

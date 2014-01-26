@@ -6,6 +6,7 @@ public class Thrower : MonoBehaviour, IEventListener {
 	public GameObject phone;
 	public Vector3 origin;
 	public Vector2 force;
+	public float phoneCallDelay;
 
 	
 
@@ -31,6 +32,7 @@ public class Thrower : MonoBehaviour, IEventListener {
 		switch (evt.GetName()) {
 		case "PhoneThrow":
 			Throw();
+			EventManager.TriggerEventAfter(new PhoneCall(), phoneCallDelay);
 			break;
 		}        
 		return true;

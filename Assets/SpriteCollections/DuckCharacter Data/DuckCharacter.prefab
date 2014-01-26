@@ -782,17 +782,17 @@ MonoBehaviour:
     attachPoints: []
   - name: duckFloat1
     boundsData:
-    - {x: .00500000268, y: .0450000018, z: 0}
+    - {x: -.00500000268, y: .174999997, z: 0}
     - {x: .409999967, y: .289999992, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: -.0100000054, y: .129999995, z: 0}
     - {x: .419999987, y: .399999976, z: 0}
     texelSize: {x: .00999999978, y: .00999999978}
     positions:
-    - {x: -.199999988, y: -.099999994, z: 0}
-    - {x: .209999993, y: -.099999994, z: 0}
-    - {x: -.199999988, y: .189999998, z: 0}
-    - {x: .209999993, y: .189999998, z: 0}
+    - {x: -.209999993, y: .0299999956, z: 0}
+    - {x: .199999988, y: .0299999956, z: 0}
+    - {x: -.209999993, y: .319999993, z: 0}
+    - {x: .199999988, y: .319999993, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -838,7 +838,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 50
-  buildKey: 1002718656
+  buildKey: 1294082567
   dataGuid: d355a1a4b242348788d271b15d95e890
   managedSpriteCollection: 0
   hasPlatformData: 0

@@ -129,9 +129,9 @@ MonoBehaviour:
     - 8ee487ed397d742efb30d5c10b3562ac
     - afc347bde3b9e46f48b7c307132dde07
     spriteTextureTimeStamps:
-    - 1390673126
-    - 1390673126
-    - 1390669347
+    - 1390673151
+    - 1390673151
+    - 1390681678
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -149,33 +149,3 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
-  - name: 
-    spriteCollectionGUID: 
-    spriteCollectionDataGUID: 4bed39f34ae56423cbb08052ddd372a4
-    spriteNames: []
-    spriteTextureGUIDs: []
-    spriteTextureTimeStamps: []
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 0
-  - name: 
-    spriteCollectionGUID: 
-    spriteCollectionDataGUID: 90636c2f9cd394ce9870b6996cbc9169
-    spriteNames: []
-    spriteTextureGUIDs: []
-    spriteTextureTimeStamps: []
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 0
-  - name: 
-    spriteCollectionGUID: 
-    spriteCollectionDataGUID: 0cc88ba38f32140028949657d5d3cf27
-    spriteNames: []
-    spriteTextureGUIDs: []
-    spriteTextureTimeStamps: []
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 0

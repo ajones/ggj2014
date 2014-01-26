@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Thrower : MonoBehaviour, IEventListener {
 
-	public GameObject phone;
+	public GameObject phoneShaker;
 	public Vector3 origin;
 	public Vector2 force;
 	public float phoneCallDelay;
@@ -23,8 +23,8 @@ public class Thrower : MonoBehaviour, IEventListener {
 	}
 
 	void Throw() {
-		GameObject newPhone = Instantiate (phone, origin, phone.transform.rotation) as GameObject;
-		Rigidbody2D rBody = newPhone.GetComponent<Rigidbody2D> ();
+		GameObject newPhone = Instantiate (phoneShaker, origin, phoneShaker.transform.rotation) as GameObject;
+		Rigidbody2D rBody = newPhone.GetComponentInChildren<Rigidbody2D> ();
 		rBody.AddForce (force);
 	}
 

@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(tk2dSpriteAnimator))]
 public class Caller : MonoBehaviour, IEventListener {
 
-	private tk2dSpriteAnimator anim;
+	public tk2dSpriteAnimator anim;
+
+	public float shakeSize;
+	public float shakeStep;
 
 	public void HangUp() {
 		anim.Play ("Idle");
@@ -20,18 +22,35 @@ public class Caller : MonoBehaviour, IEventListener {
 
 	// Use this for initialization
 	void Start () {
-		anim = GetComponent<tk2dSpriteAnimator> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 	
+	}
+
+	IEnumerator ShakePhone() {
+		Vector3 startingPos = this.transform.localPosition;
+	
+		while (anim.IsPlaying("Ring")) {
+			this.transform.localPosition = new Vector3 (
+				startingPos.x + ((Random.value * shakeSize) - shakeSize / 2f),
+				startingPos.y,
+				startingPos.z 
+				);
+		
+			yield return new WaitForSeconds (shakeStep);
+		}
+	
+		this.transform.localPosition = startingPos;
 	}
 
 	bool IEventListener.HandleEvent(IEvent evt) {
 		switch (evt.GetName()) {
 		case "PhoneCall":
-			Call();
+			Call ();
+			StartCoroutine("ShakePhone");
 			break;
 		}        
 		return true;

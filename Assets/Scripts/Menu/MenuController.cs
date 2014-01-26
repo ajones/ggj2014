@@ -13,6 +13,8 @@ public class MenuController : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown ("space")){
 			StartCoroutine(FadeOut());
+
+			EventManager.TriggerEvent(new GameStartEvent());
 		}
 	}
 	

@@ -1,17 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menu/MenuController.cs">
     <Files>
-      <File FileName="Assets/Scripts/DialogPopup/ConversationManager.cs" Line="56" Column="48" />
-      <File FileName="Assets/Scripts/DialogPopup/DialogManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Character/MovementController.cs" Line="28" Column="4" />
-      <File FileName="Assets/Scripts/Character/HeroController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Phone/Thrower.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/InteractableObjects/StickyObjectController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Interaction/CameraInteractionTarget.cs" Line="1" Column="1" />
-      <File FileName="Assets/TK2DROOT/tk2d/Code/Sprites/tk2dSprite.cs" Line="11" Column="36" />
-      <File FileName="Assets/TK2DROOT/tk2d/Code/Sprites/tk2dBaseSprite.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Menu/MenuController.cs" Line="40" Column="58" />
+      <File FileName="Assets/Scripts/Character/HeroController.cs" Line="98" Column="54" />
+      <File FileName="Assets/Scripts/GameManager/GameManager.cs" Line="56" Column="3" />
+      <File FileName="Assets/Scripts/Events/GameOverEvent.cs" Line="4" Column="27" />
+      <File FileName="Assets/Scripts/Events/BabyFedEvent.cs" Line="12" Column="2" />
+      <File FileName="Assets/Scripts/Babies/Leaver.cs" Line="17" Column="1" />
+      <File FileName="Assets/Scripts/Character/MovementController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Menu/MenuController.cs" Line="17" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

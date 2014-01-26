@@ -329,7 +329,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 54535039}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.000122070312, y: -80, z: 50.001709}
+  m_LocalPosition: {x: .0130615234, y: -80, z: 50.001709}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 876694396}
@@ -523,7 +523,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 76707178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1687.71375, y: -426.819458, z: 10}
+  m_LocalPosition: {x: 1687.72693, y: -426.819458, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1830896902}
@@ -1246,7 +1246,7 @@ TextMesh:
   m_FontSize: 0
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 29f895a9a094445eab5bdfd5f2457ea8, type: 3}
+  m_Font: {fileID: 12800000, guid: 7596d4aff7f724c6390ee5fe8afdde31, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -1262,7 +1262,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 29f895a9a094445eab5bdfd5f2457ea8, type: 3}
+  - {fileID: 2100000, guid: 7596d4aff7f724c6390ee5fe8afdde31, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1489,7 +1489,7 @@ GameObject:
   - 61: {fileID: 732758802}
   m_Layer: 0
   m_Name: level bound
-  m_TagString: floor
+  m_TagString: lake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3407,8 +3407,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 20043972}
-  xGive: 0
+  xGive: 2
   yGive: 0
+  minPoint: {x: -100, y: -500}
+  maxPoint: {x: 600, y: 384}
 --- !u!114 &1274547449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4948,7 +4950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1830896902
 Transform:
   m_ObjectHideFlags: 0
@@ -5370,7 +5372,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1904201033}
-  m_Text: Welcome To Awesome Name
+  m_Text: BREAD DREAMS
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -5380,7 +5382,7 @@ TextMesh:
   m_FontSize: 0
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 29f895a9a094445eab5bdfd5f2457ea8, type: 3}
+  m_Font: {fileID: 12800000, guid: 7596d4aff7f724c6390ee5fe8afdde31, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -5396,7 +5398,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 29f895a9a094445eab5bdfd5f2457ea8, type: 3}
+  - {fileID: 2100000, guid: 7596d4aff7f724c6390ee5fe8afdde31, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

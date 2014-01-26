@@ -39,21 +39,29 @@ public class FollowController : MonoBehaviour,IEventListener {
 			xDiff = (camTransform.position.x - xGive) - targetTransform.position.x; 
 			newCamPosition.x -= xDiff;
 			camTransform.position = newCamPosition;
+			// Move our position a step closer to the target.
 		} else if (targetTransform.position.x > camTransform.position.x + xGive) {
 			xDiff = targetTransform.position.x - (camTransform.position.x + xGive);
 			newCamPosition.x += xDiff;
 			camTransform.position = newCamPosition;
+			// Move our position a step closer to the target
 		}
 
 		if (targetTransform.position.y < camTransform.position.y - yGive) {
 			yDiff = (camTransform.position.y - yGive) - targetTransform.position.y;
 			newCamPosition.y -= yDiff;
 			camTransform.position = newCamPosition;
+			// Move our position a step closer to the target.
+			//camTransform.position = Vector3.Slerp(camTransform.position, newCamPosition, Time.deltaTime);
 		} else if (targetTransform.position.y > camTransform.position.y + yGive) {
 			yDiff = targetTransform.position.y - (camTransform.position.y + yGive);
 			newCamPosition.y += yDiff;
 			camTransform.position = newCamPosition;
+			// Move our position a step closer to the target.
+			//camTransform.position = Vector3.Slerp(camTransform.position, newCamPosition, Time.deltaTime);
     	}
+			
+
 
 		// Lock the cam's position
 		float height = cam.orthographicSize * 2f;
@@ -81,11 +89,34 @@ public class FollowController : MonoBehaviour,IEventListener {
 		
 	}
 
+	IEnumerator lerpToHero () {
+		float accum = 0;
+		Vector3 start = camTransform.position;
+
+		while(accum < 1){
+			camTransform.position = Vector3.Slerp(
+				start,
+				new Vector3(
+					target.transform.position.x,
+					target.transform.position.y,
+					camTransform.position.z	),
+				accum);
+			accum += Time.deltaTime /3f;
+			yield return new WaitForEndOfFrame();
+		}
+		this.shouldFollow = true;
+		camTransform.position = new Vector3(
+			target.transform.position.x,
+			target.transform.position.y,
+			camTransform.position.z	);
+	}
+
 	bool IEventListener.HandleEvent(IEvent evt) {
 		switch (evt.GetName()) {
 		case "GameStartEvent":
 			targetTransform = target.transform;
-			this.shouldFollow = true;
+			this.shouldFollow = false;
+			StartCoroutine(lerpToHero());
 			break;
 		}        
 		return false;

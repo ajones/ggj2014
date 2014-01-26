@@ -8,6 +8,9 @@ public class BreadSpawner : MonoBehaviour {
 		GameObject go = GameObject.Instantiate(prefab) as GameObject;
 		go.name = "bread";
 
-		go.transform.position = this.transform.position;
+		go.transform.position = new Vector3(
+			this.transform.position.x,
+			this.transform.position.y,
+			0);
 	}
 }

@@ -31,7 +31,7 @@ public class HeroController : MonoBehaviour, IEventListener {
 			}
 			
 			this.destroyPopupIfNecessary();
-			this.popUp = PopupManager.getInstance().showPopupFromGameObject("testPopup",this.gameObject, new Vector3(0,0.75f,0));
+			//this.popUp = PopupManager.getInstance().showPopupFromGameObject("testPopup",this.gameObject, new Vector3(0,0.75f,0));
 			
 			this.quack();
 			EventManager.TriggerEvent(new HeroInteractEvent());
@@ -83,13 +83,18 @@ public class HeroController : MonoBehaviour, IEventListener {
 			}
 
 			if (this.capturedItem.gameObject.name != "book"){
-				GameManager.getInstance().breadSpawner.SpawnBread();
+				StartCoroutine(WaitThenSpawnBread());
 			}
 
 			GameObject.Destroy(this.capturedItem);
 			this.capturedItem = null;
 			EventManager.TriggerEvent(new GameStateProgressEvent(GameManager.GameState.ItemDrop));
 		}
+	}
+
+	IEnumerator WaitThenSpawnBread() {
+		yield return new WaitForSeconds(1.0f);
+		GameManager.getInstance().breadSpawner.SpawnBread();
 	}
 
 
